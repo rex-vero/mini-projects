@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.black {
+    background-color: black;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.buy {
+    border: 1px solid white;
+    color: #fff;
+    background-color: rgb(63, 61, 255);
+    transition: .4s;
+
+    &:hover {
+        border: 1px solid rgb(63, 61, 255);
+        background-color: #fff;
+        transition: .4s;
+        transform: scale(1.01);
+        color: rgb(63, 61, 255);
+    }
+}
