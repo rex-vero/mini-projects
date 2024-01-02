@@ -1,0 +1,19 @@
+{
+  "name": "random",
+  "version": "1.0.0",
+  "description": "just random codes",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "random"
+  },
+  "author": "rex-vero",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.6"
+  }
+}
