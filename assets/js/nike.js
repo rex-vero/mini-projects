@@ -7,12 +7,6 @@ const next = document.getElementById('next');
 const img = document.getElementById('img');
 const white = document.getElementById('white');
 const black = document.getElementById('black');
-black.addEventListener('click', () => {
-    img.setAttribute('src', './assets/images/black.webp');
-});
-white.addEventListener('click', () => {
-    img.setAttribute('src', './assets/images/white.webp');
-});
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -36,4 +30,10 @@ moon.addEventListener('click', () => {
     next.classList.add('text');
     prev.classList.remove('text-2');
     next.classList.remove('text-2');
+});
+black.addEventListener('click', () => {
+    img.setAttribute('src', './assets/images/nike/black.webp');
+});
+white.addEventListener('click', () => {
+    img.setAttribute('src', './assets/images/nike/white.webp');
 });

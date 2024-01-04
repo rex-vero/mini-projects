@@ -1,19 +1,39 @@
+@font-face {
+    font-family: adobemingstd;
+    src: url('../font/adobemingstd-light.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: adobemingstd;
 }
 
 .bi-sun {
     color: rgb(250, 225, 0);
     text-shadow: 0 0 14px rgb(208, 255, 0);
     cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: rgb(216, 195, 5);
+        transition: .3s;
+        text-shadow: 0 0 27px rgb(208, 255, 0);
+    }
 }
 
 .bi-moon {
     color: #fafafa;
     text-shadow: 0 0 14px rgb(0, 38, 255);
     cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #dbdbdb;
+        text-shadow: 0 0 27px rgb(0, 38, 255);
+    }
 }
 
 .bg {
@@ -48,6 +68,7 @@
         color: #7e7e7e;
     }
 }
+
 .text-2 {
     color: #ffffff;
     transition: .3s;
