@@ -1,0 +1,28 @@
+@import '_nav';
+
+.card {
+    background-color: aqua;
+    border-radius: 15px;
+    width: 20rem;
+    height: 10rem;
+}
+
+@media only screen and (max-width:990px) {
+    .card {
+        width: 17rem;
+    }
+
+    .input {
+        width: 17rem !important;
+    }
+}
+
+.bi-wifi {
+    transform: rotate(90deg);
+}
+
+.input {
+    border: 1px solid black;
+    outline: none;
+    width: 20rem;
+}
