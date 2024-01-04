@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bi-sun {
+    color: rgb(250, 225, 0);
+    text-shadow: 0 0 14px rgb(208, 255, 0);
+    cursor: pointer;
+}
+
+.bi-moon {
+    color: #fafafa;
+    text-shadow: 0 0 14px rgb(0, 38, 255);
+    cursor: pointer;
+}
+
+.bg {
+    transition: .3s;
+    background-color: #000000cb;
+}
+
+.bg-2 {
+    transition: .3s;
+    background-color: #b4b4b4cb;
+}
+
+.bg-3 {
+    transition: .3s;
+    background-color: #0f0f0fec;
+}
+
+.trans {
+    transition: .4s;
+}
+
+.vh {
+    height: 90vh;
+}
+
+.text {
+    color: #000000;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #7e7e7e;
+    }
+}
+.text-2 {
+    color: #ffffff;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #adadad;
+    }
+}
