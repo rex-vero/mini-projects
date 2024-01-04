@@ -11,14 +11,14 @@
 
 .bi-sun {
   color: rgb(250, 225, 0);
-  text-shadow: 0 0 14px rgb(208, 255, 0);
+  text-shadow: 0 0 14px rgb(0, 217, 255);
   cursor: pointer;
   transition: 0.3s;
 }
 .bi-sun:hover {
   color: rgb(216, 195, 5);
   transition: 0.3s;
-  text-shadow: 0 0 27px rgb(208, 255, 0);
+  text-shadow: 0 0 27px rgb(0, 217, 255);
 }
 
 .bi-moon {

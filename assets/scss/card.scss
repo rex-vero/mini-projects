@@ -1,10 +1,14 @@
 @import '_nav';
 
 .card {
-    background-color: aqua;
     border-radius: 15px;
     width: 20rem;
     height: 10rem;
+}
+
+.default {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px black;
 }
 
 @media only screen and (max-width:990px) {
@@ -25,4 +29,17 @@
     border: 1px solid black;
     outline: none;
     width: 20rem;
+    box-shadow: 0 0 20px black;
+}
+
+.light {
+    background: url('../images/card/light.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.dark {
+    background: url('../images/card/dark.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
