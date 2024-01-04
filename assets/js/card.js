@@ -39,7 +39,7 @@ input.addEventListener('input', () => {
         bank.innerText = 'Ansar Bank';
     } else if (+number.innerText.includes(505785)) {
         bank.innerText = 'Iran Zamin Bank';
-    } else if (+number.innerText.includes(622106)||+number.innerText.includes(639194)||+number.innerText.includes(627884)||+number.innerText.includes(622106)||+number.innerText.includes(627884)||+number.innerText.includes(639194)) {
+    } else if (+number.innerText.includes(622106) || +number.innerText.includes(639194) || +number.innerText.includes(627884) || +number.innerText.includes(622106) || +number.innerText.includes(627884) || +number.innerText.includes(639194)) {
         bank.innerText = 'Parsian Bank';
     }
     else {
