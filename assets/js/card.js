@@ -37,6 +37,7 @@ input.addEventListener('input', () => {
     input.value === '' ? number.innerText = '0000-0000-0000-0000' : number.innerText = input.value;
     if (input.value.length > 16) {
         input.value = input.value.slice(0, 16);
+        number.innerText = input.value.slice(0, 16);
     }
     if (isNaN(input.value) || input.value === ' ') {
         input.value = '';
