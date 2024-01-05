@@ -7,6 +7,7 @@ const next = document.getElementById('next');
 const input = document.getElementById('input');
 const number = document.getElementById('number');
 const bank = document.getElementById('bank');
+const card = document.getElementById('card');
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -36,8 +37,10 @@ input.addEventListener('input', () => {
     input.value === '' ? number.innerText = '0000-0000-0000-0000' : number.innerText = input.value;
     if (+number.innerText.includes(627412)) {
         bank.innerText = 'Eqtesad Novin Bank';
+        card.classList.add('eqtesad-novin');
     } else if (+number.innerText.includes(627381)) {
         bank.innerText = 'Ansar Bank';
+        card.classList.add('ansar');
     } else if (+number.innerText.includes(505785)) {
         bank.innerText = 'Iran Zamin Bank';
     } else if (+number.innerText.includes(622106) || +number.innerText.includes(639194) || +number.innerText.includes(627884)) {
@@ -100,5 +103,8 @@ input.addEventListener('input', () => {
         bank.innerText = 'Kosar Credit Institution';
     } else {
         bank.innerText = '--------';
+        card.classList.add('default')
+        card.classList.remove('eqtesad-novin');
+        card.classList.remove('ansar');
     }
 });
