@@ -43,28 +43,40 @@ input.addEventListener('input', () => {
         card.classList.add('ansar');
     } else if (+number.innerText.includes(505785)) {
         bank.innerText = 'Iran Zamin Bank';
+        card.classList.add('iran-zamin');
     } else if (+number.innerText.includes(622106) || +number.innerText.includes(639194) || +number.innerText.includes(627884)) {
         bank.innerText = 'Parsian Bank';
+        card.classList.add('parsian');
     } else if (+number.innerText.includes(639347) || +number.innerText.includes(502229)) {
         bank.innerText = 'Pasagurd Bank';
+        card.classList.add('pasagurd');
     } else if (+number.innerText.includes(636214)) {
-        bank.innerText = 'Tat Bank';
+        bank.innerText = 'Ayande Bank';
+        card.classList.add('ayande');
     } else if (+number.innerText.includes(627353)) {
         bank.innerText = 'Tejarat Bank';
+        card.classList.add('tejarat');
     } else if (+number.innerText.includes(502908)) {
         bank.innerText = 'Tosee Tavon Bank';
+        card.classList.add('tosee-tavon');
     } else if (+number.innerText.includes(627648) || +number.innerText.includes(207177)) {
         bank.innerText = 'Tosee Saderat Iran Bank';
+        card.classList.add('tosee-saderat-iran');
     } else if (+number.innerText.includes(636949)) {
         bank.innerText = 'Hekmat Iranian Bank';
+        card.classList.add('hekmat-iranian');
     } else if (+number.innerText.includes(502938)) {
         bank.innerText = 'Dey Bank';
+        card.classList.add('dey');
     } else if (+number.innerText.includes(589463)) {
         bank.innerText = 'Refah Karegaran Bank';
+        card.classList.add('refah-karegaran');
     } else if (+number.innerText.includes(621986)) {
         bank.innerText = 'Saman Bank';
+        card.classList.add('saman');
     } else if (+number.innerText.includes(589210)) {
         bank.innerText = 'Sepah Bank';
+        card.classList.add('sepah');
     } else if (+number.innerText.includes(639607)) {
         bank.innerText = 'Sarmaye Bank';
     } else if (+number.innerText.includes(639346)) {
@@ -103,8 +115,6 @@ input.addEventListener('input', () => {
         bank.innerText = 'Kosar Credit Institution';
     } else {
         bank.innerText = '--------';
-        card.classList.add('default')
-        card.classList.remove('eqtesad-novin');
-        card.classList.remove('ansar');
+        card.setAttribute('class', 'card default fw-bold pt-2');
     }
 });

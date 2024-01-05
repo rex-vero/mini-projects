@@ -8,20 +8,120 @@
 
 .default {
     transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
     background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
 }
 
 .eqtesad-novin {
     transition: .4s;
+    color: #fff;
+    text-shadow: 0 0 20px black;
     background-color: rgba(64, 12, 184, 0.4);
-    box-shadow: 0 0 20px rgb(88, 0, 146);
+    box-shadow: 0 0 40px rgb(88, 0, 146);
 }
 
 .ansar {
     transition: .4s;
+    color: #fff;
+    text-shadow: 0 0 20px black;
     background-color: rgba(187, 124, 8, 0.4);
-    box-shadow: 0 0 20px rgb(146, 132, 0);
+    box-shadow: 0 0 40px rgb(146, 132, 0);
+}
+
+.iran-zamin {
+    transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(217, 152, 255, 0.4);
+    box-shadow: 0 0 40px rgb(126, 0, 115);
+}
+
+.parsian {
+    transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(255, 242, 199, 0.4);
+    box-shadow: 0 0 40px rgb(187, 153, 0);
+}
+
+.pasagurd {
+    transition: .4s;
+    color: #fff;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 40px rgb(255, 196, 0);
+}
+
+.ayande {
+    transition: .4s;
+    color: #000;
+    background-color: rgba(5, 67, 240, 0.4);
+    box-shadow: 0 0 40px rgb(0, 162, 255);
+}
+
+.tejarat {
+    transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(0, 225, 255, 0.4);
+    box-shadow: 0 0 40px rgb(0, 89, 255);
+}
+
+.tosee-tavon {
+    transition: .4s;
+    color: #000;
+    background-color: rgba(150, 241, 253, 0.4);
+    box-shadow: 0 0 40px rgb(46, 119, 255);
+}
+
+.tosee-saderat-iran {
+    transition: .4s;
+    color: #000000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(9, 255, 0, 0.4);
+    box-shadow: 0 0 40px rgb(150, 122, 0);
+}
+
+.hekmat-iranian {
+    transition: .4s;
+    color: #000000;
+    text-shadow: 0 0 20px black;
+    background-color: rgb(192, 192, 192, 0.4);
+    box-shadow: 0 0 40px rgb(0, 15, 150);
+}
+
+.dey {
+    transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(0, 238, 255, 0.4);
+    box-shadow: 0 0 40px rgb(96, 197, 255);
+}
+
+.refah-karegaran {
+    transition: .4s;
+    color: #000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 40px rgb(62, 125, 161);
+}
+
+.saman {
+    transition: .4s;
+    color: #ffffff;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(0, 55, 175, 0.4);
+    box-shadow: 0 0 40px rgb(0, 217, 255);
+}
+
+.sepah {
+    transition: .4s;
+    color: #000000;
+    text-shadow: 0 0 20px black;
+    background-color: rgba(255, 174, 0, 0.4);
+    box-shadow: 0 0 40px rgb(192, 192, 192);
 }
 
 @media only screen and (max-width:990px) {
@@ -55,14 +155,4 @@
     background: url('../images/card/dark.jpg') no-repeat center;
     background-size: cover;
     height: 100vh;
-}
-
-.eqtesad-novin {
-    background-color: rgba(64, 12, 184, 0.4);
-    box-shadow: 0 0 20px rgb(88, 0, 146);
-}
-
-.ansar {
-    background-color: rgba(187, 124, 8, 0.4);
-    box-shadow: 0 0 20px rgb(146, 132, 0);
 }
