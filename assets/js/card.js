@@ -35,6 +35,13 @@ moon.addEventListener('click', () => {
 });
 input.addEventListener('input', () => {
     input.value === '' ? number.innerText = '0000-0000-0000-0000' : number.innerText = input.value;
+    if (input.value.length > 16) {
+        input.value = input.value.slice(0, 16);
+    }
+    if (isNaN(input.value) || input.value === ' ') {
+        input.value = '';
+        number.innerText = '0000-0000-0000-0000';
+    }
     if (+number.innerText.includes(627412)) {
         bank.innerText = 'Eqtesad Novin Bank';
         card.classList.add('eqtesad-novin');
