@@ -81,8 +81,21 @@
 }
 
 .default {
+  transition: 0.4s;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 20px black;
+}
+
+.eqtesad-novin {
+  transition: 0.4s;
+  background-color: rgba(64, 12, 184, 0.4);
+  box-shadow: 0 0 20px rgb(88, 0, 146);
+}
+
+.ansar {
+  transition: 0.4s;
+  background-color: rgba(187, 124, 8, 0.4);
+  box-shadow: 0 0 20px rgb(146, 132, 0);
 }
 
 @media only screen and (max-width: 990px) {
