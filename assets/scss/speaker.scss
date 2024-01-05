@@ -1,0 +1,22 @@
+@import '_nav';
+
+.text {
+    border-radius: 10px;
+    outline: none;
+}
+
+.speaker {
+    border: 1px solid rgb(185, 0, 0);
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: rgb(185, 0, 0);
+    box-shadow: 0 0 10px black;
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        color: rgb(185, 0, 0);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 30px black;
+    }
+}
