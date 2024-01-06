@@ -87,40 +87,58 @@ input.addEventListener('input', () => {
         card.classList.add('sepah');
     } else if (+number.innerText.includes(639607)) {
         bank.innerText = 'Sarmaye Bank';
+        card.classList.add('sarmaye');
     } else if (+number.innerText.includes(639346)) {
         bank.innerText = 'Sina Bank';
+        card.classList.add('sina');
     } else if (+number.innerText.includes(502806)) {
         bank.innerText = 'Shahr Bank';
+        card.classList.add('shahr');
     } else if (+number.innerText.includes(603769)) {
         bank.innerText = 'Saderat Iran Bank';
+        card.classList.add('saderat-iran');
     } else if (+number.innerText.includes(627961)) {
         bank.innerText = 'Sanat Va Madan Bank';
+        card.classList.add('sanat-va-madan');
     } else if (+number.innerText.includes(606373)) {
-        bank.innerText = 'Qarz Alhasane Mehr Iran Bank';
+        bank.innerText = 'Qarz Alhasane Bank';
+        card.classList.add('qarz-alhasane');
     } else if (+number.innerText.includes(639599)) {
         bank.innerText = 'Qavamim Bank';
+        card.classList.add('qavamim');
     } else if (+number.innerText.includes(627488) || +number.innerText.includes(502910)) {
         bank.innerText = 'Kar Afarin Bank';
+
     } else if (+number.innerText.includes(603770) || +number.innerText.includes(639217)) {
         bank.innerText = 'Keshavarzi Bank';
+
     } else if (+number.innerText.includes(505416)) {
         bank.innerText = 'Gardeshgari Bank';
+
     } else if (+number.innerText.includes(636795)) {
         bank.innerText = 'Markazi Bank';
+
     } else if (+number.innerText.includes(628023)) {
         bank.innerText = 'Maskan Bank';
+
     } else if (+number.innerText.includes(610433) || +number.innerText.includes(991975)) {
         bank.innerText = 'Melat Bank';
+
     } else if (+number.innerText.includes(603799)) {
         bank.innerText = 'Meli Iran Bank';
+
     } else if (+number.innerText.includes(639370)) {
         bank.innerText = 'Mehr Eqtesad Bank';
+
     } else if (+number.innerText.includes(627760)) {
         bank.innerText = 'Iran Post Bank';
+
     } else if (+number.innerText.includes(628157)) {
         bank.innerText = 'Tosee Credit Institution';
+
     } else if (+number.innerText.includes(505801)) {
         bank.innerText = 'Kosar Credit Institution';
+
     } else {
         bank.innerText = '--------';
         card.setAttribute('class', 'card default fw-bold pt-2');

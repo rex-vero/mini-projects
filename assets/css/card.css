@@ -86,6 +86,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 40px rgb(0, 0, 0);
+  backdrop-filter: blur(5px);
 }
 
 .eqtesad-novin {
@@ -94,6 +95,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(64, 12, 184, 0.4);
   box-shadow: 0 0 40px rgb(88, 0, 146);
+  backdrop-filter: blur(5px);
 }
 
 .ansar {
@@ -102,6 +104,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(187, 124, 8, 0.4);
   box-shadow: 0 0 40px rgb(146, 132, 0);
+  backdrop-filter: blur(5px);
 }
 
 .iran-zamin {
@@ -110,6 +113,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(217, 152, 255, 0.4);
   box-shadow: 0 0 40px rgb(126, 0, 115);
+  backdrop-filter: blur(5px);
 }
 
 .parsian {
@@ -118,14 +122,16 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(255, 242, 199, 0.4);
   box-shadow: 0 0 40px rgb(187, 153, 0);
+  backdrop-filter: blur(5px);
 }
 
 .pasagurd {
   transition: 0.4s;
-  color: #fff;
+  color: rgb(255, 196, 0);
   text-shadow: 0 0 20px black;
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 40px rgb(255, 196, 0);
+  backdrop-filter: blur(5px);
 }
 
 .ayande {
@@ -133,6 +139,7 @@
   color: #000;
   background-color: rgba(5, 67, 240, 0.4);
   box-shadow: 0 0 40px rgb(0, 162, 255);
+  backdrop-filter: blur(5px);
 }
 
 .tejarat {
@@ -141,6 +148,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(0, 225, 255, 0.4);
   box-shadow: 0 0 40px rgb(0, 89, 255);
+  backdrop-filter: blur(5px);
 }
 
 .tosee-tavon {
@@ -148,14 +156,16 @@
   color: #000;
   background-color: rgba(150, 241, 253, 0.4);
   box-shadow: 0 0 40px rgb(46, 119, 255);
+  backdrop-filter: blur(5px);
 }
 
 .tosee-saderat-iran {
   transition: 0.4s;
-  color: #000000;
+  color: rgb(255, 196, 0);
   text-shadow: 0 0 20px black;
   background-color: rgba(9, 255, 0, 0.4);
   box-shadow: 0 0 40px rgb(150, 122, 0);
+  backdrop-filter: blur(5px);
 }
 
 .hekmat-iranian {
@@ -164,6 +174,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(192, 192, 192, 0.4);
   box-shadow: 0 0 40px rgb(0, 15, 150);
+  backdrop-filter: blur(5px);
 }
 
 .dey {
@@ -172,14 +183,16 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(0, 238, 255, 0.4);
   box-shadow: 0 0 40px rgb(96, 197, 255);
+  backdrop-filter: blur(5px);
 }
 
 .refah-karegaran {
   transition: 0.4s;
   color: #000;
   text-shadow: 0 0 20px black;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 40px rgb(62, 125, 161);
+  backdrop-filter: blur(5px);
 }
 
 .saman {
@@ -188,6 +201,7 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(0, 55, 175, 0.4);
   box-shadow: 0 0 40px rgb(0, 217, 255);
+  backdrop-filter: blur(5px);
 }
 
 .sepah {
@@ -196,6 +210,70 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(255, 174, 0, 0.4);
   box-shadow: 0 0 40px rgb(192, 192, 192);
+  backdrop-filter: blur(5px);
+}
+
+.sarmaye {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(68, 0, 255, 0.4);
+  box-shadow: 0 0 40px rgb(255, 255, 255);
+  backdrop-filter: blur(5px);
+}
+
+.sina {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 40px rgb(255, 238, 0);
+  backdrop-filter: blur(5px);
+}
+
+.shahr {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(202, 0, 0, 0.4);
+  box-shadow: 0 0 40px rgb(235, 0, 0);
+  backdrop-filter: blur(5px);
+}
+
+.saderat-iran {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(173, 173, 173, 0.4);
+  box-shadow: 0 0 40px rgb(0, 119, 255);
+  backdrop-filter: blur(5px);
+}
+
+.sanat-va-madan {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(3, 0, 173, 0.4);
+  box-shadow: 0 0 40px rgb(99, 141, 233);
+  backdrop-filter: blur(5px);
+}
+
+.qarz-alhasane {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(69, 173, 0, 0.4);
+  box-shadow: 0 0 40px rgb(133, 60, 0);
+  backdrop-filter: blur(5px);
+}
+
+.qavamim {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 40px rgb(206, 20, 20);
+  backdrop-filter: blur(5px);
 }
 
 @media only screen and (max-width: 990px) {
