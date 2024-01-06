@@ -1,13 +1,15 @@
 @import '_nav';
 
-.text {
+.textarea {
     border-radius: 10px;
     outline: none;
+    resize: none;
+    padding-left: 5px;
+    font-size: 20px;
 }
 
 .speaker {
     border: 1px solid rgb(185, 0, 0);
-    border-radius: 8px;
     color: #ffffff;
     background-color: rgb(185, 0, 0);
     box-shadow: 0 0 10px black;
