@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/nike.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Random</title>
+    <title>Nike</title>
 </head>
 
 <body id="body">
@@ -18,6 +18,20 @@
             <a href="./index.html" id="prev" class="fs-4 text-decoration-none text">First</a>
             <i id="sun" class="bi bi-sun fs-2"></i>
             <i id="moon" class="bi bi-moon d-none fs-2"></i>
+            <button id="offcanvas-btn" class="offcanvas-btn fs-4" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Pages</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div id="offcanvas-header" class="offcanvas-header bg-2">
+                    <h5 id="offcanvas-text" class="offcanvas-title fs-4 text-black">Pages Menu</h5>
+                    <button class="bi fs-2 bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div id="offcanvas-body" class="offcanvas-body d-flex flex-column text-center">
+                    <a class="text-decoration-none links fs-4" href="./index.html">Nike (1)</a>
+                    <a class="text-decoration-none links fs-4" href="./pages/card.html">Card (2)</a>
+                    <a class="text-decoration-none links fs-4" href="./pages/speaker.html">Speaker (3)</a>
+                </div>
+            </div>
             <a href="./pages/card.html" id="next" class="fs-4 text-decoration-none text">Next</a>
         </div>
     </nav>
