@@ -74,6 +74,51 @@
   color: #adadad;
 }
 
+.offcanvas-btn {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  transition: 0.3s;
+}
+.offcanvas-btn:hover {
+  transition: 0.3s;
+  color: #7e7e7e;
+}
+
+.offcanvas-btn2 {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.offcanvas-btn2:hover {
+  transition: 0.3s;
+  color: #adadad;
+}
+
+.bi-x-lg {
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  transition: 0.1s;
+}
+.bi-x-lg:hover {
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+.links {
+  color: rgb(17, 0, 255);
+  background-color: rgba(255, 255, 255, 0.3764705882);
+  transition: 0.4s;
+  text-shadow: 0 0 2px black;
+}
+.links:hover {
+  transition: 0.4s;
+  color: rgb(0, 153, 255);
+  background-color: rgba(202, 202, 202, 0.768627451);
+}
+
 .img {
   height: 19rem;
 }

@@ -78,3 +78,52 @@
         color: #adadad;
     }
 }
+
+.offcanvas-btn {
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #7e7e7e;
+    }
+}
+
+.offcanvas-btn2 {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #adadad;
+    }
+}
+
+.bi-x-lg {
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    transition: .1s;
+
+    &:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+}
+
+.links {
+    color: rgb(17, 0, 255);
+    background-color: #ffffff60;
+    transition: .4s;
+    text-shadow: 0 0 2px black;
+
+    &:hover {
+        transition: .4s;
+        color: rgb(0, 153, 255);
+        background-color: #cacacac4;
+    }
+}
