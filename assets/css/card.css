@@ -287,9 +287,9 @@
 
 .saderat-iran {
   transition: 0.4s;
-  color: #000000;
+  color: #ffffff;
   text-shadow: 0 0 20px black;
-  background-color: rgba(173, 173, 173, 0.4);
+  background-color: rgba(52, 126, 145, 0.4);
   box-shadow: 0 0 40px rgb(0, 119, 255);
   backdrop-filter: blur(5px);
 }
@@ -318,6 +318,87 @@
   text-shadow: 0 0 20px black;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 40px rgb(206, 20, 20);
+  backdrop-filter: blur(5px);
+}
+
+.kar-afarin {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(66, 180, 0, 0.4);
+  box-shadow: 0 0 40px rgb(196, 183, 0);
+  backdrop-filter: blur(5px);
+}
+
+.keshavarzi {
+  transition: 0.4s;
+  color: #fdec00;
+  text-shadow: 0 0 20px black;
+  background-color: rgba(211, 197, 0, 0.4);
+  box-shadow: 0 0 40px rgb(0, 119, 6);
+  backdrop-filter: blur(5px);
+}
+
+.gardeshgari {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(160, 75, 75, 0.4);
+  box-shadow: 0 0 40px rgb(255, 255, 255);
+  backdrop-filter: blur(5px);
+}
+
+.markazi {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(0, 28, 104, 0.4);
+  box-shadow: 0 0 40px rgb(146, 138, 138);
+  backdrop-filter: blur(5px);
+}
+
+.maskan {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(27, 161, 0, 0.4);
+  box-shadow: 0 0 40px rgb(0, 49, 7);
+  backdrop-filter: blur(5px);
+}
+
+.melat {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(223, 38, 14, 0.4);
+  box-shadow: 0 0 40px rgb(255, 255, 255);
+  backdrop-filter: blur(5px);
+}
+
+.meli {
+  transition: 0.4s;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(0, 88, 221, 0.4);
+  box-shadow: 0 0 40px rgb(0, 117, 0);
+  backdrop-filter: blur(5px);
+}
+
+.mehr-eqtesad {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 40px rgb(187, 0, 0);
+  backdrop-filter: blur(2px);
+}
+
+.iran-post {
+  transition: 0.4s;
+  color: #000000;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  background-color: rgba(221, 206, 0, 0.4);
+  box-shadow: 0 0 40px rgb(255, 255, 255);
   backdrop-filter: blur(5px);
 }
 

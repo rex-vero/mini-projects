@@ -126,37 +126,31 @@ input.addEventListener('input', () => {
         card.classList.add('qavamim');
     } else if (+number.innerText.includes(627488) || +number.innerText.includes(502910)) {
         bank.innerText = 'Kar Afarin Bank';
-
+        card.classList.add('kar-afarin');
     } else if (+number.innerText.includes(603770) || +number.innerText.includes(639217)) {
         bank.innerText = 'Keshavarzi Bank';
-
+        card.classList.add('keshavarzi');
     } else if (+number.innerText.includes(505416)) {
         bank.innerText = 'Gardeshgari Bank';
-
+        card.classList.add('gardeshgari');
     } else if (+number.innerText.includes(636795)) {
         bank.innerText = 'Markazi Bank';
-
+        card.classList.add('markazi');
     } else if (+number.innerText.includes(628023)) {
         bank.innerText = 'Maskan Bank';
-
+        card.classList.add('maskan');
     } else if (+number.innerText.includes(610433) || +number.innerText.includes(991975)) {
         bank.innerText = 'Melat Bank';
-
+        card.classList.add('melat');
     } else if (+number.innerText.includes(603799)) {
         bank.innerText = 'Meli Iran Bank';
-
-    } else if (+number.innerText.includes(639370)) {
+        card.classList.add('meli');
+    } else if (+number.innerText.includes(639370) || +number.innerText.includes(639369)) {
         bank.innerText = 'Mehr Eqtesad Bank';
-
+        card.classList.add('mehr-eqtesad');
     } else if (+number.innerText.includes(627760)) {
         bank.innerText = 'Iran Post Bank';
-
-    } else if (+number.innerText.includes(628157)) {
-        bank.innerText = 'Tosee Credit Institution';
-
-    } else if (+number.innerText.includes(505801)) {
-        bank.innerText = 'Kosar Credit Institution';
-
+        card.classList.add('iran-post');
     } else {
         bank.innerText = '--------';
         card.setAttribute('class', 'card default fw-bold pt-2');
