@@ -8,8 +8,8 @@ const offcanvasBtn = document.getElementById('offcanvas-btn');
 const offcanvasHeader = document.getElementById('offcanvas-header');
 const offcanvasBody = document.getElementById('offcanvas-body');
 const offcanvasText = document.getElementById('offcanvas-text');
-const text = document.getElementById('text');
-const btn = document.getElementById('btn');
+const clock = document.getElementById('clock');
+const nowDate = document.getElementById('date');
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -27,6 +27,10 @@ sun.addEventListener('click', () => {
     offcanvasBody.classList.add('bg');
     offcanvasText.classList.add('text-white');
     offcanvasText.classList.remove('text-black');
+    clock.classList.remove('text-danger');
+    clock.classList.add('text-success');
+    nowDate.classList.add('text-danger');
+    nowDate.classList.remove('text-success');
 });
 moon.addEventListener('click', () => {
     sun.classList.remove('d-none');
@@ -47,8 +51,25 @@ moon.addEventListener('click', () => {
     offcanvasBody.classList.add('trans');
     offcanvasText.classList.remove('text-white');
     offcanvasText.classList.add('text-black');
+    clock.classList.add('text-danger');
+    clock.classList.remove('text-success');
+    nowDate.classList.remove('text-danger');
+    nowDate.classList.add('text-success');
 });
-btn.addEventListener('click', () => {
-    let speaker = new SpeechSynthesisUtterance(text.value);
-    speechSynthesis.speak(speaker);
-});
+setInterval(() => {
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    h = h < 10 ? '0' + h : h;
+    m = m < 10 ? '0' + m : m;
+    s = s < 10 ? '0' + s : s;
+    clock.innerText = `${h}:${m}:${s}`;
+}, 1);
+const date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth() + 1;
+let day = date.getDate();
+month = month < 10 ? '0' + month : month;
+day = day < 10 ? '0' + day : day;
+nowDate.innerText = `${year}-${month}-${day}`;
