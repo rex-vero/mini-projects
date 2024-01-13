@@ -8,6 +8,7 @@ const offcanvasBtn = document.getElementById('offcanvas-btn');
 const offcanvasHeader = document.getElementById('offcanvas-header');
 const offcanvasBody = document.getElementById('offcanvas-body');
 const offcanvasText = document.getElementById('offcanvas-text');
+const title = document.getElementById('title');
 const online = document.getElementById('online');
 const offline = document.getElementById('offline');
 const icon = document.getElementById('icon');
@@ -66,11 +67,13 @@ window.addEventListener('offline', () => {
     online.classList.add('d-none');
     navbar.style.display = 'none';
     offline.classList.remove('d-none');
+    title.innerText = 'You Are Offline Now!!!';
 });
 window.addEventListener('online', () => {
     online.classList.remove('d-none');
     navbar.style.display = 'block';
     offline.classList.add('d-none');
+    title.innerText = 'Offline';
 });
 setInterval(() => {
     icon.classList.toggle('bi-wifi')
