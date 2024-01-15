@@ -119,43 +119,58 @@
   background-color: rgba(202, 202, 202, 0.768627451);
 }
 
-.loader {
-  gap: 10px;
+.button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: #000;
+  transition: 0.4s;
 }
-.loader::before, .loader::after {
-  content: "";
-  height: 1.3rem;
-  aspect-ratio: 3/2;
-  border-radius: 50%;
-  background: linear-gradient(#222222 0 0) top/100% 40% no-repeat, radial-gradient(farthest-side, #000000 95%, rgba(0, 0, 0, 0)) 50%/8px 8px no-repeat #dbdbdb;
-  animation: eye 1.5s infinite alternate ease-in;
-}
-
-.bi-wifi-off {
-  animation: wifi 5s infinite alternate ease-in-out;
+.button:hover {
+  transition: 0.4s;
+  transform: scale(1.18);
 }
 
-@keyframes eye {
-  70% {
-    background-size: 100% 40%, 8px 8px;
-  }
-  85% {
-    background-size: 100% 120%, 8px 8px;
-  }
-  100% {
-    background-size: 100% 40%, 8px 8px;
-  }
-}
-@keyframes wifi {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.red {
+  background-color: red;
+  color: rgb(12, 0, 187);
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
 }
 
-/*# sourceMappingURL=offline.css.map */
+.blue {
+  background-color: blue;
+  color: black;
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
+.aqua {
+  background-color: aqua;
+  color: #000;
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
+.blueviolet {
+  background-color: blueviolet;
+  color: gold;
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
+.green {
+  background-color: green;
+  color: brown;
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
+.yellowgreen {
+  background-color: yellowgreen;
+  color: rgb(140, 0, 255);
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
+/*# sourceMappingURL=color.css.map */

@@ -16,6 +16,11 @@
     }
 }
 
+.bi-wifi-off {
+    animation: wifi 5s infinite alternate ease-in-out;
+}
+
+
 @keyframes eye {
 
     70% {
@@ -28,5 +33,20 @@
 
     100% {
         background-size: 100% 40%, 8px 8px
+    }
+}
+
+@keyframes wifi {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

@@ -1,0 +1,56 @@
+@import '_nav';
+
+.button {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: #000;
+    transition: .4s;
+
+    &:hover {
+        transition: .4s;
+        transform: scale(1.18);
+    }
+}
+
+.red {
+    background-color: red;
+    color: rgb(12, 0, 187);
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
+
+.blue {
+    background-color: blue;
+    color: black;
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
+
+.aqua {
+    background-color: aqua;
+    color: #000;
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
+
+.blueviolet {
+    background-color: blueviolet;
+    color: gold;
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
+
+.green {
+    background-color: green;
+    color: brown;
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
+
+.yellowgreen {
+    background-color: yellowgreen;
+    color: rgb(140, 0, 255);
+    text-shadow: 0 0 10px black;
+    transition: all .4s;
+}
