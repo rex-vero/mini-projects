@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <script src="../assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="../assets/css/card.css">
-    <script src="../assets/js/card.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/age.css">
+    <script src="../assets/js/age.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Card</title>
+    <title>Age Calculator</title>
 </head>
 
-<body class="light" id="body">
+<body id="body">
     <nav id="navbar" class="bg-2">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="../index.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
+            <a href="./color.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
             <i id="sun" class="bi bi-sun fs-2"></i>
             <i id="moon" class="bi bi-moon d-none fs-2"></i>
             <button id="offcanvas-btn" class="offcanvas-btn fs-4" data-bs-toggle="offcanvas"
@@ -37,25 +36,17 @@
                     <a class="text-decoration-none links fs-4" href="./age-calculator.html">Age Calculator (7)</a>
                 </div>
             </div>
-            <a href="./speaker.html" id="next" class="fs-4 text-decoration-none text">Next</a>
+            <a href="#" id="next" class="fs-4 text-decoration-none text">Next</a>
         </div>
     </nav>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh">
-        <div id="card" class="card default fw-bold pt-2">
-            <div class="d-flex justify-content-between">
-                <i class="bi fs-5 bi-wifi mx-2 mb-3"></i>
-                <p id="bank" class="fs-5 mx-2">--------</p>
+        <div class="d-flex flex-column align-items-center box">
+            <p class="fs-4 bi"><i class="bi bi-cake2"></i> Enter Your Birthday <i class="bi bi-cake2"></i></p>
+            <div class="d-flex gap-2">
+                <input class="input" type="date" id="date">
+                <button class="button" id="btn">Calculate</button>
             </div>
-            <div class="d-flex flex-column mt-2 ms-2">
-                <p class="fs-5" id="number">0000-0000-0000-0000</p>
-                <div class="d-flex justify-content-between">
-                    <p class="fs-6">CCV2: <span class="fs-5">233</span></p>
-                    <p class="fs-6 me-2">EXP: <span class="fs-5">07/04</span></p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <input id="input" placeholder="Enter Only Numbers..." class="mt-4 rounded-pill input ps-2 py-1" type="tel">
+            <p class="fs-4" id="text"></p>
         </div>
     </div>
 </body>
