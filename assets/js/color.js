@@ -49,7 +49,7 @@ moon.addEventListener('click', () => {
 });
 btn.addEventListener('click', () => {
     const color = () => {
-        let classes = ["red", "blue", "aqua", "blueviolet", "green", "yellowgreen"];
+        let classes = ["red", "blue", "aqua", "blueviolet", "green", "yellowgreen", "pink"];
         let random = Math.floor(Math.random() * classes.length);
         return classes[random];
     };

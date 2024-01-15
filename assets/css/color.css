@@ -173,4 +173,11 @@
   transition: all 0.4s;
 }
 
+.pink {
+  background-color: pink;
+  color: rgb(255, 94, 0);
+  text-shadow: 0 0 10px black;
+  transition: all 0.4s;
+}
+
 /*# sourceMappingURL=color.css.map */
