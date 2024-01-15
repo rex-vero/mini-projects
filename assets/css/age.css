@@ -119,67 +119,38 @@
   background-color: rgba(202, 202, 202, 0.768627451);
 }
 
+.box {
+  background-color: white;
+  box-shadow: 0 0 25px black;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
 .button {
   background-color: transparent;
-  border-radius: 10px;
-  border: 2px solid black;
+  padding: 3px 6px;
   color: #000;
-  transition: 0.4s;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 .button:hover {
-  transition: 0.4s;
-  transform: scale(1.18);
+  transition: 0.2s;
+  transform: scale(1.02);
   color: white;
   background-color: black;
 }
 
-.red {
-  background-color: red;
-  color: rgb(12, 0, 187);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
+.input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+.input:hover {
+  transition: 0.2s;
+  transform: scale(1.02);
 }
 
-.blue {
-  background-color: blue;
-  color: black;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.aqua {
-  background-color: aqua;
-  color: #000;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.blueviolet {
-  background-color: blueviolet;
-  color: gold;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.green {
-  background-color: green;
-  color: brown;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.yellowgreen {
-  background-color: yellowgreen;
-  color: rgb(140, 0, 255);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.pink {
-  background-color: pink;
-  color: rgb(255, 94, 0);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-/*# sourceMappingURL=color.css.map */
+/*# sourceMappingURL=age.css.map */
