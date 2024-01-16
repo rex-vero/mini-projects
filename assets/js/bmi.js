@@ -91,7 +91,7 @@ btn.addEventListener('click', () => {
             body.setAttribute('class', 'obese');
             text2.setAttribute('class', 'obese-text fs-5 text-decoration-underline');
             text2.innerText = 'Obese';
-        } else if (bmi >= 40 && bmi < 100) {
+        } else if (bmi >= 40 && bmi < 99990001) {
             body.setAttribute('class', 'eobese');
             text2.setAttribute('class', 'eobese-text fs-5 text-decoration-underline');
             text2.innerText = 'Extremely Obese';
