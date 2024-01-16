@@ -8,13 +8,15 @@ const offcanvasBtn = document.getElementById('offcanvas-btn');
 const offcanvasHeader = document.getElementById('offcanvas-header');
 const offcanvasBody = document.getElementById('offcanvas-body');
 const offcanvasText = document.getElementById('offcanvas-text');
-const birthDate = document.getElementById('date');
+const height = document.getElementById('height');
+const weight = document.getElementById('weight');
 const btn = document.getElementById('btn');
 const text = document.getElementById('text');
+const text2 = document.getElementById('text2');
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
-    body.classList.add('bg');
+    body.setAttribute('class', 'bg');
     navbar.classList.remove('bg-2');
     navbar.classList.add('bg-3');
     prev.classList.add('text-2');
@@ -32,7 +34,7 @@ sun.addEventListener('click', () => {
 moon.addEventListener('click', () => {
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
-    body.classList.remove('bg');
+    body.setAttribute('class', 'bg-white');
     body.classList.add('trans');
     navbar.classList.add('bg-2');
     navbar.classList.remove('bg-3');
@@ -49,31 +51,53 @@ moon.addEventListener('click', () => {
     offcanvasText.classList.remove('text-white');
     offcanvasText.classList.add('text-black');
 });
+height.addEventListener('input', () => {
+    if (height.value.length > 3) {
+        height.value = height.value.slice(0, 3);
+    }
+    if (isNaN(height.value) || height.value === ' ') {
+        height.value = '';
+    }
+});
+weight.addEventListener('input', () => {
+    if (weight.value.length > 4) {
+        weight.value = weight.value.slice(0, 4);
+    }
+    if (isNaN(weight.value) || weight.value === ' ') {
+        weight.value = '';
+    }
+});
 btn.addEventListener('click', () => {
-    if (birthDate.value === '') {
-        text.innerText = 'Enter Your Age';
+    if ((height.value && weight.value) === '') {
+        text.innerText = 'Enter Height & Weight!';
+        text2.innerText = '';
         text.classList.add('text-danger');
         text.classList.remove('text-success');
     } else {
-        const today = new Date();
-        const then = new Date(birthDate.value);
-        let year = today.getFullYear() - then.getFullYear();
-        let month = today.getMonth() - then.getMonth();
-        let day = today.getDay() - then.getDay();
-        if (day < 0) {
-            month--;
-            day += new Date(
-                today.getFullYear(),
-                today.getMonth(),
-                0
-            ).getDate();
+        const bmi = (weight.value / ((height.value * 0.01) ** 2)).toFixed(2);
+        if (bmi >= 9 && bmi < 19) {
+            body.setAttribute('class', 'low');
+            text2.setAttribute('class', 'low-text fs-5 text-decoration-underline');
+            text2.innerText = 'Underweight';
+        } else if (bmi >= 19 && bmi < 25) {
+            body.setAttribute('class', 'normal');
+            text2.setAttribute('class', 'normal-text fs-5 text-decoration-underline');
+            text2.innerText = 'Healthy';
+        } else if (bmi >= 25 && bmi < 30) {
+            body.setAttribute('class', 'over');
+            text2.setAttribute('class', 'over-text fs-5 text-decoration-underline');
+            text2.innerText = 'Overweight';
+        } else if (bmi >= 30 && bmi < 40) {
+            body.setAttribute('class', 'obese');
+            text2.setAttribute('class', 'obese-text fs-5 text-decoration-underline');
+            text2.innerText = 'Obese';
+        } else if (bmi >= 40 && bmi < 66) {
+            body.setAttribute('class', 'eobese');
+            text2.setAttribute('class', 'eobese-text fs-5 text-decoration-underline');
+            text2.innerText = 'Extremely Obese';
         }
-        if (month < 0) {
-            year--;
-            month += 12;
-        }
-        text.innerText = `${year} years, ${month} months & ${day} days`;
-        text.classList.add('text-success');
+        text.innerText = `Your BMI is ${bmi}`;
         text.classList.remove('text-danger');
+        text.classList.add('text-success');
     }
 });

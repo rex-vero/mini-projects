@@ -48,6 +48,10 @@ moon.addEventListener('click', () => {
     offcanvasText.classList.add('text-black');
 });
 btn.addEventListener('click', () => {
+    btn.innerText = 'Altered';
+    setTimeout(() => {
+        btn.innerText = 'Altering Color';
+    }, 3500);
     const color = () => {
         let classes = ["red", "blue", "aqua", "blueviolet", "green", "yellowgreen", "pink"];
         let random = Math.floor(Math.random() * classes.length);
