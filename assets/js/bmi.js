@@ -75,7 +75,7 @@ btn.addEventListener('click', () => {
         text.classList.remove('text-success');
     } else {
         const bmi = (weight.value / ((height.value * 0.01) ** 2)).toFixed(2);
-        if (bmi >= 9 && bmi < 19) {
+        if (bmi >= 0 && bmi < 19) {
             body.setAttribute('class', 'low');
             text2.setAttribute('class', 'low-text fs-5 text-decoration-underline');
             text2.innerText = 'Underweight';
@@ -91,7 +91,7 @@ btn.addEventListener('click', () => {
             body.setAttribute('class', 'obese');
             text2.setAttribute('class', 'obese-text fs-5 text-decoration-underline');
             text2.innerText = 'Obese';
-        } else if (bmi >= 40 && bmi < 66) {
+        } else if (bmi >= 40 && bmi < 100) {
             body.setAttribute('class', 'eobese');
             text2.setAttribute('class', 'eobese-text fs-5 text-decoration-underline');
             text2.innerText = 'Extremely Obese';
