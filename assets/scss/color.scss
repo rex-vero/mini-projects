@@ -15,6 +15,21 @@
     }
 }
 
+.button2 {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: #ffffff;
+    transition: .4s;
+
+    &:hover {
+        transition: .4s;
+        transform: scale(1.18);
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
 .red {
     background-color: red;
     color: rgb(12, 0, 187);
@@ -56,6 +71,7 @@
     text-shadow: 0 0 10px black;
     transition: all .4s;
 }
+
 .pink {
     background-color: pink;
     color: rgb(255, 94, 0);

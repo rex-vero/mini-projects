@@ -133,6 +133,20 @@
   background-color: black;
 }
 
+.button2 {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  color: #ffffff;
+  transition: 0.4s;
+}
+.button2:hover {
+  transition: 0.4s;
+  transform: scale(1.18);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
 .red {
   background-color: red;
   color: rgb(12, 0, 187);

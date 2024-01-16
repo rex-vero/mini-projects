@@ -26,6 +26,7 @@ sun.addEventListener('click', () => {
     offcanvasBody.classList.add('bg');
     offcanvasText.classList.add('text-white');
     offcanvasText.classList.remove('text-black');
+    btn.setAttribute('class', 'button2 p-2 fs-5');
 });
 moon.addEventListener('click', () => {
     sun.classList.remove('d-none');
@@ -46,6 +47,7 @@ moon.addEventListener('click', () => {
     offcanvasBody.classList.add('trans');
     offcanvasText.classList.remove('text-white');
     offcanvasText.classList.add('text-black');
+    btn.setAttribute('class', 'button p-2 fs-5');
 });
 btn.addEventListener('click', () => {
     btn.innerText = 'Altered';
