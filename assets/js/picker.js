@@ -63,6 +63,10 @@ moon.addEventListener('click', () => {
         btn.setAttribute('class', 'picker d-none');
     }
 });
+if (window.EyeDropper === undefined) {
+    label.innerText = 'You Can Not Use Eye Dropper :(';
+    return;
+}
 input.addEventListener('change', () => {
     let reader = new FileReader();
     reader.onload = (e) => {
