@@ -1,0 +1,138 @@
+@import '_nav';
+
+.label {
+    cursor: pointer;
+    border: 2px solid #000000;
+    padding: 12px;
+    font-size: 22px;
+    border-radius: 35px;
+    color: #000000;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+        background-color: #000000;
+        color: #fff;
+        animation: label1 .8s ease-out;
+        box-shadow: 0 0 0 2em transparent;
+    }
+}
+
+.label2 {
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    padding: 12px;
+    font-size: 22px;
+    border-radius: 35px;
+    color: #ffffff;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+        background-color: #ffffff;
+        color: #000000;
+        animation: label2 .8s ease-out;
+        box-shadow: 0 0 0 2em transparent;
+    }
+}
+
+.img {
+    height: 25rem;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:990px) {
+    .label {
+        font-size: 16px;
+        border: 1px solid #000000;
+    }
+
+    .img {
+        height: 14rem;
+    }
+
+    .label2 {
+        font-size: 16px;
+        border: 1px solid #ffffff;
+    }
+}
+
+@keyframes label1 {
+    0% {
+        box-shadow: 0 0 0 0 black;
+    }
+}
+
+
+@keyframes label2 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    }
+}
+
+
+.picker {
+    border: 1px solid #000000;
+    color: #000;
+    margin-top: 10px;
+    padding: 5px;
+    transition: .3s;
+    background-color: transparent;
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+        background-image: linear-gradient(to right,
+                #E7484F,
+                #E7484F 16.65%,
+                #F68B1D 16.65%,
+                #F68B1D 33.3%,
+                #FCED00 33.3%,
+                #FCED00 49.95%,
+                #009E4F 49.95%,
+                #009E4F 66.6%,
+                #00AAC3 66.6%,
+                #00AAC3 83.25%,
+                #732982 83.25%,
+                #732982 100%,
+                #E7484F 100%);
+        animation: slidebg 1s ease-in-out infinite alternate;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+.picker2 {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 5px;
+    transition: .3s;
+    background-color: transparent;
+    border-radius: 10px;
+
+    &:hover,
+    &:focus {
+        background-image: linear-gradient(to right,
+                #E7484F,
+                #E7484F 16.65%,
+                #F68B1D 16.65%,
+                #F68B1D 33.3%,
+                #FCED00 33.3%,
+                #FCED00 49.95%,
+                #009E4F 49.95%,
+                #009E4F 66.6%,
+                #00AAC3 66.6%,
+                #00AAC3 83.25%,
+                #732982 83.25%,
+                #732982 100%,
+                #E7484F 100%);
+        animation: slidebg 1s ease-in-out infinite alternate;
+        transform: scale(1.2);
+    }
+}
