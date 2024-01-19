@@ -8,6 +8,7 @@ const offcanvasBtn = document.getElementById('offcanvas-btn');
 const offcanvasHeader = document.getElementById('offcanvas-header');
 const offcanvasBody = document.getElementById('offcanvas-body');
 const offcanvasText = document.getElementById('offcanvas-text');
+const pcText = document.getElementById('pc');
 const label = document.getElementById('label');
 const input = document.getElementById('input');
 const img = document.getElementById('img');
@@ -36,6 +37,7 @@ sun.addEventListener('click', () => {
     } else {
         btn.setAttribute('class', 'picker d-none');
     }
+    pcText.classList.add('text-white');
 });
 moon.addEventListener('click', () => {
     sun.classList.remove('d-none');
@@ -62,6 +64,7 @@ moon.addEventListener('click', () => {
     } else {
         btn.setAttribute('class', 'picker d-none');
     }
+    pcText.classList.remove('text-white');
 });
 input.addEventListener('change', () => {
     let reader = new FileReader();

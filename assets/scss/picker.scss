@@ -41,6 +41,10 @@
     border-radius: 5px;
 }
 
+.pc {
+    display: none;
+}
+
 @media only screen and (max-width:990px) {
     .label {
         font-size: 16px;
@@ -54,6 +58,18 @@
     .label2 {
         font-size: 16px;
         border: 1px solid #ffffff;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .picker {
+        display: none;
+    }
+
+    .picker2 {
+        display: none;
     }
 }
 
