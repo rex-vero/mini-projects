@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <script src="../assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="../assets/css/bmi.css">
-    <script src="../assets/js/bmi.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/picker.css">
+    <script src="../assets/js/picker.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>BMI</title>
+    <title>Color Picker</title>
 </head>
 
 <body id="body">
     <nav id="navbar" class="bg-2">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="./color.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
+            <a href="./bmi.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
             <i id="sun" class="bi bi-sun fs-2"></i>
             <i id="moon" class="bi bi-moon d-none fs-2"></i>
             <button id="offcanvas-btn" class="offcanvas-btn fs-4" data-bs-toggle="offcanvas"
@@ -37,29 +37,15 @@
                     <a class="text-decoration-none links fs-4" href="./color-picker.html">Color Picker (8)</a>
                 </div>
             </div>
-            <a href="./color-picker.html" id="next" class="fs-4 text-decoration-none text">Next</a>
+            <a href="#" id="next" class="fs-4 text-decoration-none text">Next</a>
         </div>
     </nav>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh">
-        <div class="d-flex flex-column align-items-center box">
-            <p class="fs-4 d-flex text-center"><img src="../assets/images/icon/weight-scale.png" class="img-fluid img"> Enter Your
-                Height & Weight <img src="../assets/images/icon/weight-scale.png" class="img-fluid img"></p>
-            <div class="d-flex flex-column">
-                <div class="d-flex flex-column flex-lg-row gap-2 mb-2">
-                    <div class="d-flex flex-column align-items-center">
-                        <label class="fs-5" for="height">Height</label>
-                        <input class="input" placeholder="By CM..." type="tel" id="height">
-                    </div>
-                    <div class="d-flex flex-column align-items-center">
-                        <label class="fs-5" for="weight">Weight</label>
-                        <input class="input" placeholder="By KG..." type="tel" id="weight">
-                    </div>
-                </div>
-                <button class="button" id="btn">Calculate</button>
-            </div>
-            <p class="fs-4" id="text"></p>
-            <p id="text2"></p>
-        </div>
+        <label id="label" class="label mt-0 mt-lg-4" for="input">Please Add A Photo</label>
+        <input type="file" class="d-none" id="input">
+        <img id="img" class="img-fluid d-none img mt-3">
+        <button id="btn" class="picker d-none">Pick Color</button>
+        <p class="bg-white rounded-pill py-1 px-3 mt-3 d-none fw-bold fs-6" id="color"></p>
     </div>
 </body>
 
