@@ -67,6 +67,5 @@ btn.addEventListener('click', () => {
             width: 128,
             height: 128
         });
-        qrcodeDiv.appendChild(qrcode);
     }
 });
