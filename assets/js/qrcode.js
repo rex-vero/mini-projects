@@ -58,6 +58,7 @@ moon.addEventListener('click', () => {
 });
 btn.addEventListener('click', () => {
     const qrcodeDiv = document.getElementById('qrcode');
+    qrcodeDiv.innerHTML = '';
     if (input.value === '') {
         qrcodeDiv.innerHTML = '';
     } else {
