@@ -57,11 +57,10 @@ moon.addEventListener('click', () => {
     btn.classList.remove('btn-click1');
 });
 btn.addEventListener('click', () => {
+    const qrcodeDiv = document.getElementById('qrcode');
     if (input.value === '') {
-        return;
-    } else {
-        const qrcodeDiv = document.getElementById('qrcode');
         qrcodeDiv.innerHTML = '';
+    } else {
         let qrcode = new QRCode(qrcodeDiv, {
             text: input.value,
             width: 200,
