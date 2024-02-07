@@ -64,8 +64,8 @@ btn.addEventListener('click', () => {
         qrcodeDiv.innerHTML = '';
         let qrcode = new QRCode(qrcodeDiv, {
             text: input.value,
-            width: 128,
-            height: 128
+            width: 200,
+            height: 200
         });
     }
 });
