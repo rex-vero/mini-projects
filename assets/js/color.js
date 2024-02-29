@@ -49,15 +49,27 @@ moon.addEventListener('click', () => {
     offcanvasText.classList.add('text-black');
     btn.setAttribute('class', 'button p-2 fs-5');
 });
+// btn.addEventListener('click', () => {
+//     btn.innerText = 'Altered';
+//     setTimeout(() => {
+//         btn.innerText = 'Altering Color';
+//     }, 3500);
+//     const color = () => {
+//         let classes = ["red", "blue", "aqua", "blueviolet", "green", "yellowgreen", "pink"];
+//         let random = Math.floor(Math.random() * classes.length);
+//         return classes[random];
+//     };
+//     body.className = color();
+// });
+// codes above for random classes
 btn.addEventListener('click', () => {
     btn.innerText = 'Altered';
-    setTimeout(() => {
+    time = setTimeout(() => {
         btn.innerText = 'Altering Color';
     }, 3500);
-    const color = () => {
-        let classes = ["red", "blue", "aqua", "blueviolet", "green", "yellowgreen", "pink"];
-        let random = Math.floor(Math.random() * classes.length);
-        return classes[random];
+    const randColor = () => {
+        return Math.floor(Math.random() * 256);
     };
-    body.className = color();
+    body.style.backgroundColor = `rgb(${randColor()},${randColor()},${randColor()})`;
+    body.style.transition = '.5s';
 });
