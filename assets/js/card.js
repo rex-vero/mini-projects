@@ -52,103 +52,111 @@ moon.addEventListener('click', () => {
     offcanvasText.classList.add('text-black');
 });
 input.addEventListener('input', () => {
-    input.value === '' ? number.innerText = '0000-0000-0000-0000' : number.innerText = input.value;
+    if (input.value === '') {
+        number.innerText = '0000-0000-0000-0000';
+    } else {
+        const dash = (input) => {
+            return input.replace(/\d{4}(?=.)/g, '$&-');
+        };
+        let newValue = dash(input.value);
+        number.innerText = newValue;
+    }
     if (input.value.length > 16) {
         input.value = input.value.slice(0, 16);
-        number.innerText = input.value.slice(0, 16);
+        number.innerText = number.innerText.slice(0, 19);
     }
     if (isNaN(input.value) || input.value === ' ') {
         input.value = '';
         number.innerText = '0000-0000-0000-0000';
     }
-    if (+number.innerText.includes(627412)) {
+    if (+input.value.startsWith(627412)) {
         bank.innerText = 'Eqtesad Novin Bank';
         card.classList.add('eqtesad-novin');
-    } else if (+number.innerText.includes(627381)) {
+    } else if (+input.value.startsWith(627381)) {
         bank.innerText = 'Ansar Bank';
         card.classList.add('ansar');
-    } else if (+number.innerText.includes(505785)) {
+    } else if (+input.value.startsWith(505785)) {
         bank.innerText = 'Iran Zamin Bank';
         card.classList.add('iran-zamin');
-    } else if (+number.innerText.includes(622106) || +number.innerText.includes(639194) || +number.innerText.includes(627884)) {
+    } else if (+input.value.startsWith(622106) || +input.value.startsWith(639194) || +input.value.startsWith(627884)) {
         bank.innerText = 'Parsian Bank';
         card.classList.add('parsian');
-    } else if (+number.innerText.includes(639347) || +number.innerText.includes(502229)) {
+    } else if (+input.value.startsWith(639347) || +input.value.startsWith(502229)) {
         bank.innerText = 'Pasagurd Bank';
         card.classList.add('pasagurd');
-    } else if (+number.innerText.includes(636214)) {
+    } else if (+input.value.startsWith(636214)) {
         bank.innerText = 'Ayande Bank';
         card.classList.add('ayande');
-    } else if (+number.innerText.includes(627353)) {
+    } else if (+input.value.startsWith(627353)) {
         bank.innerText = 'Tejarat Bank';
         card.classList.add('tejarat');
-    } else if (+number.innerText.includes(502908)) {
+    } else if (+input.value.startsWith(502908)) {
         bank.innerText = 'Tosee Tavon Bank';
         card.classList.add('tosee-tavon');
-    } else if (+number.innerText.includes(627648) || +number.innerText.includes(207177)) {
+    } else if (+input.value.startsWith(627648) || +input.value.startsWith(207177)) {
         bank.innerText = 'Tosee Saderat Iran Bank';
         card.classList.add('tosee-saderat-iran');
-    } else if (+number.innerText.includes(636949)) {
+    } else if (+input.value.startsWith(636949)) {
         bank.innerText = 'Hekmat Iranian Bank';
         card.classList.add('hekmat-iranian');
-    } else if (+number.innerText.includes(502938)) {
+    } else if (+input.value.startsWith(502938)) {
         bank.innerText = 'Dey Bank';
         card.classList.add('dey');
-    } else if (+number.innerText.includes(589463)) {
+    } else if (+input.value.startsWith(589463)) {
         bank.innerText = 'Refah Karegaran Bank';
         card.classList.add('refah-karegaran');
-    } else if (+number.innerText.includes(621986)) {
+    } else if (+input.value.startsWith(621986)) {
         bank.innerText = 'Saman Bank';
         card.classList.add('saman');
-    } else if (+number.innerText.includes(589210)) {
+    } else if (+input.value.startsWith(589210)) {
         bank.innerText = 'Sepah Bank';
         card.classList.add('sepah');
-    } else if (+number.innerText.includes(639607)) {
+    } else if (+input.value.startsWith(639607)) {
         bank.innerText = 'Sarmaye Bank';
         card.classList.add('sarmaye');
-    } else if (+number.innerText.includes(639346)) {
+    } else if (+input.value.startsWith(639346)) {
         bank.innerText = 'Sina Bank';
         card.classList.add('sina');
-    } else if (+number.innerText.includes(502806)) {
+    } else if (+input.value.startsWith(502806)) {
         bank.innerText = 'Shahr Bank';
         card.classList.add('shahr');
-    } else if (+number.innerText.includes(603769)) {
+    } else if (+input.value.startsWith(603769)) {
         bank.innerText = 'Saderat Iran Bank';
         card.classList.add('saderat-iran');
-    } else if (+number.innerText.includes(627961)) {
+    } else if (+input.value.startsWith(627961)) {
         bank.innerText = 'Sanat Va Madan Bank';
         card.classList.add('sanat-va-madan');
-    } else if (+number.innerText.includes(606373)) {
+    } else if (+input.value.startsWith(606373)) {
         bank.innerText = 'Qarz Alhasane Bank';
         card.classList.add('qarz-alhasane');
-    } else if (+number.innerText.includes(639599)) {
+    } else if (+input.value.startsWith(639599)) {
         bank.innerText = 'Qavamim Bank';
         card.classList.add('qavamim');
-    } else if (+number.innerText.includes(627488) || +number.innerText.includes(502910)) {
+    } else if (+input.value.startsWith(627488) || +input.value.startsWith(502910)) {
         bank.innerText = 'Kar Afarin Bank';
         card.classList.add('kar-afarin');
-    } else if (+number.innerText.includes(603770) || +number.innerText.includes(639217)) {
+    } else if (+input.value.startsWith(603770) || +input.value.startsWith(639217)) {
         bank.innerText = 'Keshavarzi Bank';
         card.classList.add('keshavarzi');
-    } else if (+number.innerText.includes(505416)) {
+    } else if (+input.value.startsWith(505416)) {
         bank.innerText = 'Gardeshgari Bank';
         card.classList.add('gardeshgari');
-    } else if (+number.innerText.includes(636795)) {
+    } else if (+input.value.startsWith(636795)) {
         bank.innerText = 'Markazi Bank';
         card.classList.add('markazi');
-    } else if (+number.innerText.includes(628023)) {
+    } else if (+input.value.startsWith(628023)) {
         bank.innerText = 'Maskan Bank';
         card.classList.add('maskan');
-    } else if (+number.innerText.includes(610433) || +number.innerText.includes(991975)) {
+    } else if (+input.value.startsWith(610433) || +input.value.startsWith(991975)) {
         bank.innerText = 'Melat Bank';
         card.classList.add('melat');
-    } else if (+number.innerText.includes(603799)) {
+    } else if (+input.value.startsWith(603799)) {
         bank.innerText = 'Meli Iran Bank';
         card.classList.add('meli');
-    } else if (+number.innerText.includes(639370) || +number.innerText.includes(639369)) {
+    } else if (+input.value.startsWith(639370) || +input.value.startsWith(639369)) {
         bank.innerText = 'Mehr Eqtesad Bank';
         card.classList.add('mehr-eqtesad');
-    } else if (+number.innerText.includes(627760)) {
+    } else if (+input.value.startsWith(627760)) {
         bank.innerText = 'Iran Post Bank';
         card.classList.add('iran-post');
     } else {
