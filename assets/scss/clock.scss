@@ -8,3 +8,90 @@
 .numberic {
     font-family: seven;
 }
+
+.clock {
+    border: 2px solid black;
+    padding: 5rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        z-index: 4;
+        background-color: #000;
+    }
+}
+
+.clock2 {
+    border: 2px solid rgb(255, 255, 255);
+
+    &::before {
+        background-color: #ffffff;
+    }
+}
+
+.hour {
+    height: 60px;
+    width: 60px;
+
+    &::before {
+        height: 30px;
+        position: absolute;
+        content: "";
+        width: 2px;
+        z-index: 1;
+        background-color: #000000;
+    }
+}
+
+.min {
+    height: 80px;
+    width: 80px;
+
+    &::before {
+        height: 40px;
+        position: absolute;
+        content: "";
+        width: 2px;
+        z-index: 2;
+        background-color: #000000;
+    }
+}
+
+.sec {
+    height: 100px;
+    width: 100px;
+
+    &::before {
+        height: 60px;
+        position: absolute;
+        content: "";
+        width: 2px;
+        z-index: 3;
+        background-color: #000000;
+    }
+}
+
+.hour2 {
+
+    &::before {
+
+        background-color: #ffffff;
+    }
+}
+
+.min2 {
+
+    &::before {
+        background-color: #ffffff;
+    }
+}
+
+.sec2 {
+
+    &::before {
+        background-color: #ffffff;
+    }
+}

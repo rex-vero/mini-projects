@@ -10,6 +10,10 @@ const offcanvasBody = document.getElementById('offcanvas-body');
 const offcanvasText = document.getElementById('offcanvas-text');
 const clock = document.getElementById('clock');
 const nowDate = document.getElementById('date');
+const sec = document.querySelector('.sec');
+const min = document.querySelector('.min');
+const hour = document.querySelector('.hour');
+const clockAnalog = document.querySelector('.clock');
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -31,6 +35,10 @@ sun.addEventListener('click', () => {
     clock.classList.add('text-success');
     nowDate.classList.add('text-danger');
     nowDate.classList.remove('text-success');
+    clockAnalog.classList.add('clock2');
+    hour.classList.add('hour2');
+    min.classList.add('min2');
+    sec.classList.add('sec2');
 });
 moon.addEventListener('click', () => {
     sun.classList.remove('d-none');
@@ -55,17 +63,24 @@ moon.addEventListener('click', () => {
     clock.classList.remove('text-success');
     nowDate.classList.remove('text-danger');
     nowDate.classList.add('text-success');
+    clockAnalog.classList.remove('clock2');
+    hour.classList.remove('hour2');
+    min.classList.remove('min2');
+    sec.classList.remove('sec2');
 });
 setInterval(() => {
     const date = new Date();
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
+    hour.style.transform = `rotateZ(${(h * 30) + (m / 12)}deg)`;
+    min.style.transform = `rotateZ(${(m * 6)}deg)`;
+    sec.style.transform = `rotateZ(${(s * 6)}deg)`;
     h = h < 10 ? '0' + h : h;
     m = m < 10 ? '0' + m : m;
     s = s < 10 ? '0' + s : s;
     clock.innerText = `${h}:${m}:${s}`;
-}, 1);
+}, 1000);
 const date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth() + 1;
