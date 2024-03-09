@@ -1,0 +1,191 @@
+@font-face {
+  font-family: adobemingstd;
+  src: url("../font/adobemingstd-light.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: adobemingstd;
+}
+
+.bi-sun {
+  color: rgb(250, 225, 0);
+  text-shadow: 0 0 14px rgb(0, 217, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bi-sun:hover {
+  color: rgb(216, 195, 5);
+  transition: 0.3s;
+  text-shadow: 0 0 27px rgb(0, 217, 255);
+}
+
+.bi-moon {
+  color: #fafafa;
+  text-shadow: 0 0 14px rgb(0, 38, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bi-moon:hover {
+  transition: 0.3s;
+  color: #dbdbdb;
+  text-shadow: 0 0 27px rgb(0, 38, 255);
+}
+
+.bg {
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.7960784314);
+}
+
+.bg-2 {
+  transition: 0.3s;
+  background-color: rgba(180, 180, 180, 0.7960784314);
+}
+
+.bg-3 {
+  transition: 0.3s;
+  background-color: rgba(15, 15, 15, 0.9254901961);
+}
+
+.trans {
+  transition: 0.4s;
+}
+
+.vh {
+  height: 90vh;
+}
+
+.text {
+  color: #000000;
+  transition: 0.3s;
+}
+.text:hover {
+  transition: 0.3s;
+  color: #7e7e7e;
+}
+
+.text-2 {
+  color: #ffffff;
+  transition: 0.3s;
+}
+.text-2:hover {
+  transition: 0.3s;
+  color: #adadad;
+}
+
+.offcanvas-btn {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  transition: 0.3s;
+}
+.offcanvas-btn:hover {
+  transition: 0.3s;
+  color: #7e7e7e;
+}
+
+.offcanvas-btn2 {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.offcanvas-btn2:hover {
+  transition: 0.3s;
+  color: #adadad;
+}
+
+.bi-x-lg {
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 0, 0);
+  transition: 0.1s;
+}
+.bi-x-lg:hover {
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+.links {
+  color: rgb(17, 0, 255);
+  background-color: rgba(255, 255, 255, 0.3764705882);
+  transition: 0.4s;
+  text-shadow: 0 0 2px black;
+}
+.links:hover {
+  transition: 0.4s;
+  color: rgb(0, 153, 255);
+  background-color: rgba(202, 202, 202, 0.768627451);
+}
+
+#list {
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.limit {
+  height: 239px;
+}
+
+.todo {
+  background-color: rgb(116, 196, 152);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.input {
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.btn-add {
+  border: 1px solid rgb(0, 160, 0);
+  background-color: transparent;
+  color: rgb(0, 160, 0);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.btn-add:hover {
+  transform: scale(1.01);
+  background-color: rgb(0, 160, 0);
+  color: black;
+}
+
+.text-todo {
+  text-shadow: 0 0 10px black;
+  user-select: none;
+}
+
+.bi-trash {
+  display: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.bi-trash:hover {
+  color: #ec0000;
+}
+
+.checked {
+  text-decoration: line-through rgb(255, 255, 255);
+}
+
+.bg-todo {
+  display: flex;
+  background-color: rgb(44, 104, 52);
+  border: 1px solid black;
+  margin: 1px 0;
+  user-select: none;
+  transition: 0.4s;
+}
+.bg-todo:hover {
+  background-color: rgb(22, 53, 26);
+}
+.bg-todo:hover .bi-trash {
+  display: block;
+}
+
+/*# sourceMappingURL=todo.css.map */

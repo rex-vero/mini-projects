@@ -1,0 +1,74 @@
+@import '_nav';
+
+#list {
+    overflow-y: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.limit {
+    height: 239px;
+}
+
+.todo {
+    background-color: rgb(116, 196, 152);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.input {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.btn-add {
+    border: 1px solid rgb(0, 160, 0);
+    background-color: transparent;
+    color: rgb(0, 160, 0);
+    border-radius: 10px;
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.01);
+        background-color: rgb(0, 160, 0);
+        color: black;
+    }
+}
+
+.text-todo {
+    text-shadow: 0 0 10px black;
+    user-select: none;
+}
+
+.bi-trash {
+    display: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: #ec0000;
+    }
+}
+
+.checked {
+    text-decoration: line-through rgb(255, 255, 255);
+}
+
+.bg-todo {
+    display: flex;
+    background-color: rgb(44, 104, 52);
+    border: 1px solid black;
+    margin: 1px 0;
+    user-select: none;
+    transition: .4s;
+
+    &:hover {
+        background-color: rgb(22, 53, 26);
+
+        .bi-trash {
+            display: block;
+        }
+    }
+}
