@@ -58,7 +58,7 @@ add.addEventListener('click', () => {
         div.setAttribute('class', 'bg-todo align-items-center justify-content-between');
         warn.innerText = '';
         div.innerHTML += `<span class="text-white fs-5 px-3">${input.value}</span>
-        <i class="bi bi-trash px-3 fs-5"></i>`;
+        <i class="bi bi-trash px-2 fs-5"></i>`;
         list.appendChild(div);
     }
     input.value = '';

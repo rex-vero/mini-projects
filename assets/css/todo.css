@@ -188,4 +188,10 @@
   display: block;
 }
 
+@media only screen and (max-width: 990px) {
+  .bi-trash {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=todo.css.map */
