@@ -1,63 +1,57 @@
-const body = document.getElementById('body');
-const navbar = document.getElementById('navbar');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const offcanvasBtn = document.getElementById('offcanvas-btn');
-const offcanvasHeader = document.getElementById('offcanvas-header');
-const offcanvasBody = document.getElementById('offcanvas-body');
-const offcanvasText = document.getElementById('offcanvas-text');
-const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 sun.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
+    const input = document.getElementById('input');
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
-    body.classList.add('bg');
-    navbar.classList.remove('bg-2');
-    navbar.classList.add('bg-3');
-    prev.classList.add('text-2');
-    next.classList.add('text-2');
-    prev.classList.remove('text');
-    next.classList.remove('text');
-    offcanvasBtn.classList.add('offcanvas-btn2');
-    offcanvasBtn.classList.remove('offcanvas-btn');
-    offcanvasHeader.classList.remove('bg-2');
-    offcanvasHeader.classList.add('bg-3');
-    offcanvasBody.classList.add('bg');
-    offcanvasText.classList.add('text-white');
-    offcanvasText.classList.remove('text-black');
+    for (const text of nORp) {
+        text.classList.add('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.add('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.add('bg');
+    }
+    for (const link of links) {
+        link.classList.add('links2');
+    }
+    nORp[1].classList.add('offcanvas-btn2');
     input.classList.add('dark');
-    input.classList.remove('light');
     btn.classList.add('btn-click1');
-    btn.classList.remove('btn-click');
 });
 moon.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
+    const input = document.getElementById('input');
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
-    body.classList.remove('bg');
-    body.classList.add('trans');
-    navbar.classList.add('bg-2');
-    navbar.classList.remove('bg-3');
-    prev.classList.add('text');
-    next.classList.add('text');
-    prev.classList.remove('text-2');
-    next.classList.remove('text-2');
-    offcanvasBtn.classList.remove('offcanvas-btn2');
-    offcanvasBtn.classList.add('offcanvas-btn');
-    offcanvasHeader.classList.add('bg-2');
-    offcanvasHeader.classList.remove('bg-3');
-    offcanvasBody.classList.remove('bg');
-    offcanvasBody.classList.add('trans');
-    offcanvasText.classList.remove('text-white');
-    offcanvasText.classList.add('text-black');
+    for (const text of nORp) {
+        text.classList.remove('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.remove('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.remove('bg');
+    }
+    for (const link of links) {
+        link.classList.remove('links2');
+    }
+    nORp[1].classList.remove('offcanvas-btn2');
     input.classList.remove('dark');
-    input.classList.add('light');
-    btn.classList.add('btn-click');
     btn.classList.remove('btn-click1');
 });
 btn.addEventListener('click', () => {
     const qrcodeDiv = document.getElementById('qrcode');
+    const input = document.getElementById('input');
     qrcodeDiv.innerHTML = '';
     if (input.value === '') {
         qrcodeDiv.innerHTML = '';
