@@ -11,6 +11,16 @@ const offcanvasText = document.getElementById('offcanvas-text');
 const add = document.getElementById('add');
 const input = document.getElementById('input');
 const list = document.getElementById('list');
+const del = document.getElementById('del');
+const data = JSON.parse(localStorage.getItem('todo'));
+let todoList = data || [];
+todoList.forEach(todo => {
+    const div = document.createElement('div');
+    div.setAttribute('class', 'bg-todo align-items-center justify-content-between');
+    div.innerHTML += `<span class="text-white fs-5 px-3">${todo}</span>
+    <i class="bi bi-trash px-2 fs-5"></i>`;
+    list.appendChild(div);
+});
 sun.addEventListener('click', () => {
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -60,11 +70,20 @@ add.addEventListener('click', () => {
         div.innerHTML += `<span class="text-white fs-5 px-3">${input.value}</span>
         <i class="bi bi-trash px-2 fs-5"></i>`;
         list.appendChild(div);
+        todoList.push(input.value)
+        localStorage.setItem('todo', JSON.stringify(todoList));
     }
     input.value = '';
     if (list.scrollHeight >= 240) {
         list.classList.add('limit');
     }
+});
+del.addEventListener('click', () => {
+    list.classList.remove('limit');
+    localStorage.clear();
+    todoList = [];
+    list.innerHTML = '';
+    input.value = '';
 });
 input.addEventListener('input', () => {
     if (input.value.length > 20) {
@@ -74,6 +93,8 @@ input.addEventListener('input', () => {
 list.addEventListener('click', (e) => {
     if (e.target.nodeName === 'I') {
         e.target.parentElement.style.display = 'none';
+        todoList.splice(todoList.indexOf(e.target.parentElement.firstChild.textContent), 1);
+        localStorage.setItem('todo', JSON.stringify(todoList));
         if (list.scrollHeight < 240) {
             list.classList.remove('limit');
         }
