@@ -48,9 +48,12 @@
             <div class="d-flex flex-column todo p-2">
                 <p id="warn" class="fs-6 text-center text-danger"></p>
                 <p class="fs-3 text-todo text-center">ToDo List</p>
-                <div class="d-flex gap-1">
+                <div class="d-flex flex-column gap-1">
                     <input id="input" type="text" class="input p-1">
-                    <button class="btn-add px-3 py-2" id="add">Add</button>
+                    <div class="d-flex justify-content-between gap-2">
+                        <button class="btn-add fs-5 p-3 w-100 bi bi-plus py-2" id="add"></button>
+                        <button class="btn-del fs-5 p-3 w-100 bi bi-x py-2" id="del"></button>
+                    </div>
                 </div>
             </div>
             <div id="list" class="d-flex flex-column"></div>
