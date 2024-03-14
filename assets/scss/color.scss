@@ -16,15 +16,10 @@
 }
 
 .button2 {
-    background-color: transparent;
-    border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
     color: #ffffff;
-    transition: .4s;
 
     &:hover {
-        transition: .4s;
-        transform: scale(1.18);
         color: rgb(0, 0, 0);
         background-color: rgb(255, 255, 255);
     }

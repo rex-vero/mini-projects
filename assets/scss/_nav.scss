@@ -10,6 +10,10 @@
     font-family: adobemingstd;
 }
 
+.body {
+    transition: .4s;
+}
+
 .bi-sun {
     color: rgb(250, 225, 0);
     text-shadow: 0 0 14px rgb(0, 217, 255);
@@ -51,10 +55,6 @@
     background-color: #0f0f0fec;
 }
 
-.trans {
-    transition: .4s;
-}
-
 .vh {
     height: 90vh;
 }
@@ -64,7 +64,6 @@
     transition: .3s;
 
     &:hover {
-        transition: .3s;
         color: #7e7e7e;
     }
 }
@@ -74,7 +73,6 @@
     transition: .3s;
 
     &:hover {
-        transition: .3s;
         color: #adadad;
     }
 }
@@ -86,19 +84,14 @@
     transition: .3s;
 
     &:hover {
-        transition: .3s;
         color: #7e7e7e;
     }
 }
 
 .offcanvas-btn2 {
-    border: none;
-    background-color: transparent;
     color: #ffffff;
-    transition: .3s;
 
     &:hover {
-        transition: .3s;
         color: #adadad;
     }
 }
@@ -117,13 +110,18 @@
 
 .links {
     color: rgb(17, 0, 255);
-    background-color: #ffffff60;
     transition: .4s;
     text-shadow: 0 0 2px black;
 
     &:hover {
-        transition: .4s;
         color: rgb(0, 153, 255);
-        background-color: #cacacac4;
+    }
+}
+
+.links2 {
+    color: rgb(255, 255, 255);
+
+    &:hover {
+        color: rgb(112, 112, 112);
     }
 }

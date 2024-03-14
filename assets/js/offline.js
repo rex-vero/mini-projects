@@ -1,75 +1,70 @@
-const body = document.getElementById('body');
-const navbar = document.getElementById('navbar');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const offcanvasBtn = document.getElementById('offcanvas-btn');
-const offcanvasHeader = document.getElementById('offcanvas-header');
-const offcanvasBody = document.getElementById('offcanvas-body');
-const offcanvasText = document.getElementById('offcanvas-text');
-const title = document.getElementById('title');
-const online = document.getElementById('online');
-const offline = document.getElementById('offline');
-const icon = document.getElementById('icon');
-const text = document.getElementById('text');
-const icon2 = document.getElementById('icon2');
-const text2 = document.getElementById('text2');
 sun.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const offs = document.querySelectorAll('.offs');
+    const links = document.querySelectorAll('.links');
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
-    body.classList.add('bg');
-    navbar.classList.remove('bg-2');
-    navbar.classList.add('bg-3');
-    prev.classList.add('text-2');
-    next.classList.add('text-2');
-    prev.classList.remove('text');
-    next.classList.remove('text');
-    offcanvasBtn.classList.add('offcanvas-btn2');
-    offcanvasBtn.classList.remove('offcanvas-btn');
-    offcanvasHeader.classList.remove('bg-2');
-    offcanvasHeader.classList.add('bg-3');
-    offcanvasBody.classList.add('bg');
-    offcanvasText.classList.add('text-white');
-    offcanvasText.classList.remove('text-black');
-    icon.classList.add('text-white');
-    text.classList.add('text-white');
-    icon.classList.add('trans');
-    text.classList.add('trans');
-    icon2.classList.add('text-white');
-    text2.classList.add('text-white');
+    for (const text of nORp) {
+        text.classList.add('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.add('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.add('bg');
+    }
+    for (const link of links) {
+        link.classList.add('links2');
+    }
+    for (const off of offs) {
+        off.classList.add('text-white');
+    }
+    nORp[1].classList.add('offcanvas-btn2');
 });
 moon.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
+    const offs = document.querySelectorAll('.offs');
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
-    body.classList.remove('bg');
-    body.classList.add('trans');
-    navbar.classList.add('bg-2');
-    navbar.classList.remove('bg-3');
-    prev.classList.add('text');
-    next.classList.add('text');
-    prev.classList.remove('text-2');
-    next.classList.remove('text-2');
-    offcanvasBtn.classList.remove('offcanvas-btn2');
-    offcanvasBtn.classList.add('offcanvas-btn');
-    offcanvasHeader.classList.add('bg-2');
-    offcanvasHeader.classList.remove('bg-3');
-    offcanvasBody.classList.remove('bg');
-    offcanvasBody.classList.add('trans');
-    offcanvasText.classList.remove('text-white');
-    offcanvasText.classList.add('text-black');
-    icon.classList.remove('text-white');
-    text.classList.remove('text-white');
-    icon2.classList.remove('text-white');
-    text2.classList.remove('text-white');
+    for (const text of nORp) {
+        text.classList.remove('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.remove('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.remove('bg');
+    }
+    for (const link of links) {
+        link.classList.remove('links2');
+    }
+    for (const off of offs) {
+        off.classList.remove('text-white');
+    }
+    nORp[1].classList.remove('offcanvas-btn2');
 });
 window.addEventListener('offline', () => {
+    const title = document.getElementById('title');
+    const online = document.getElementById('online');
+    const offline = document.getElementById('offline');
+    const navbar = document.getElementById('navbar');
     online.classList.add('d-none');
     navbar.style.display = 'none';
     offline.classList.remove('d-none');
     title.innerText = 'You Are Offline Now!!!';
 });
 window.addEventListener('online', () => {
+    const title = document.getElementById('title');
+    const online = document.getElementById('online');
+    const offline = document.getElementById('offline');
+    const navbar = document.getElementById('navbar');
     online.classList.remove('d-none');
     navbar.style.display = 'block';
     offline.classList.add('d-none');

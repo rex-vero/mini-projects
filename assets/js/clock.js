@@ -1,68 +1,56 @@
-const body = document.getElementById('body');
-const navbar = document.getElementById('navbar');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const offcanvasBtn = document.getElementById('offcanvas-btn');
-const offcanvasHeader = document.getElementById('offcanvas-header');
-const offcanvasBody = document.getElementById('offcanvas-body');
-const offcanvasText = document.getElementById('offcanvas-text');
-const clock = document.getElementById('clock');
 const nowDate = document.getElementById('date');
 const sec = document.querySelector('.sec');
 const min = document.querySelector('.min');
 const hour = document.querySelector('.hour');
-const clockAnalog = document.querySelector('.clock');
 sun.addEventListener('click', () => {
+    const clockAnalog = document.querySelector('.clock');
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
-    body.classList.add('bg');
-    navbar.classList.remove('bg-2');
-    navbar.classList.add('bg-3');
-    prev.classList.add('text-2');
-    next.classList.add('text-2');
-    prev.classList.remove('text');
-    next.classList.remove('text');
-    offcanvasBtn.classList.add('offcanvas-btn2');
-    offcanvasBtn.classList.remove('offcanvas-btn');
-    offcanvasHeader.classList.remove('bg-2');
-    offcanvasHeader.classList.add('bg-3');
-    offcanvasBody.classList.add('bg');
-    offcanvasText.classList.add('text-white');
-    offcanvasText.classList.remove('text-black');
-    clock.classList.remove('text-danger');
-    clock.classList.add('text-success');
-    nowDate.classList.add('text-danger');
-    nowDate.classList.remove('text-success');
+    for (const text of nORp) {
+        text.classList.add('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.add('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.add('bg');
+    }
+    for (const link of links) {
+        link.classList.add('links2');
+    }
+    nORp[1].classList.add('offcanvas-btn2');
     clockAnalog.classList.add('clock2');
     hour.classList.add('hour2');
     min.classList.add('min2');
     sec.classList.add('sec2');
 });
 moon.addEventListener('click', () => {
+    const clockAnalog = document.querySelector('.clock');
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
-    body.classList.remove('bg');
-    body.classList.add('trans');
-    navbar.classList.add('bg-2');
-    navbar.classList.remove('bg-3');
-    prev.classList.add('text');
-    next.classList.add('text');
-    prev.classList.remove('text-2');
-    next.classList.remove('text-2');
-    offcanvasBtn.classList.remove('offcanvas-btn2');
-    offcanvasBtn.classList.add('offcanvas-btn');
-    offcanvasHeader.classList.add('bg-2');
-    offcanvasHeader.classList.remove('bg-3');
-    offcanvasBody.classList.remove('bg');
-    offcanvasBody.classList.add('trans');
-    offcanvasText.classList.remove('text-white');
-    offcanvasText.classList.add('text-black');
-    clock.classList.add('text-danger');
-    clock.classList.remove('text-success');
-    nowDate.classList.remove('text-danger');
-    nowDate.classList.add('text-success');
+    for (const text of nORp) {
+        text.classList.remove('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.remove('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.remove('bg');
+    }
+    for (const link of links) {
+        link.classList.remove('links2');
+    }
+    nORp[1].classList.remove('offcanvas-btn2');
     clockAnalog.classList.remove('clock2');
     hour.classList.remove('hour2');
     min.classList.remove('min2');

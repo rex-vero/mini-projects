@@ -19,20 +19,14 @@
 }
 
 .label2 {
-    cursor: pointer;
     border: 2px solid #ffffff;
-    padding: 12px;
-    font-size: 22px;
-    border-radius: 35px;
     color: #ffffff;
-    transition: .5s;
 
     &:hover,
     &:focus {
         background-color: #ffffff;
         color: #000000;
         animation: label2 .8s ease-out;
-        box-shadow: 0 0 0 2em transparent;
     }
 }
 

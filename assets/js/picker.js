@@ -1,72 +1,65 @@
-const body = document.getElementById('body');
-const navbar = document.getElementById('navbar');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const offcanvasBtn = document.getElementById('offcanvas-btn');
-const offcanvasHeader = document.getElementById('offcanvas-header');
-const offcanvasBody = document.getElementById('offcanvas-body');
-const offcanvasText = document.getElementById('offcanvas-text');
-const pcText = document.getElementById('pc');
-const label = document.getElementById('label');
 const input = document.getElementById('input');
-const img = document.getElementById('img');
 const btn = document.getElementById('btn');
-const color = document.getElementById('color');
 sun.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
+    const label = document.getElementById('label');
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
-    body.setAttribute('class', 'bg');
-    navbar.classList.remove('bg-2');
-    navbar.classList.add('bg-3');
-    prev.classList.add('text-2');
-    next.classList.add('text-2');
-    prev.classList.remove('text');
-    next.classList.remove('text');
-    offcanvasBtn.classList.add('offcanvas-btn2');
-    offcanvasBtn.classList.remove('offcanvas-btn');
-    offcanvasHeader.classList.remove('bg-2');
-    offcanvasHeader.classList.add('bg-3');
-    offcanvasBody.classList.add('bg');
-    offcanvasText.classList.add('text-white');
-    offcanvasText.classList.remove('text-black');
-    label.setAttribute('class', 'label2');
+    for (const text of nORp) {
+        text.classList.add('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.add('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.add('bg');
+    }
+    for (const link of links) {
+        link.classList.add('links2');
+    }
+    nORp[1].classList.add('offcanvas-btn2');
+    label.classList.add('label2');
     if (color.innerText !== '') {
         btn.setAttribute('class', 'picker');
     } else {
         btn.setAttribute('class', 'picker d-none');
     }
-    pcText.classList.add('text-white');
 });
 moon.addEventListener('click', () => {
+    const bodys = document.querySelectorAll('.body');
+    const navs = document.querySelectorAll('.navs');
+    const nORp = document.querySelectorAll('.text');
+    const links = document.querySelectorAll('.links');
+    const label = document.getElementById('label');
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
-    body.setAttribute('class', 'bg-white');
-    body.classList.add('trans');
-    navbar.classList.add('bg-2');
-    navbar.classList.remove('bg-3');
-    prev.classList.add('text');
-    next.classList.add('text');
-    prev.classList.remove('text-2');
-    next.classList.remove('text-2');
-    offcanvasBtn.classList.remove('offcanvas-btn2');
-    offcanvasBtn.classList.add('offcanvas-btn');
-    offcanvasHeader.classList.add('bg-2');
-    offcanvasHeader.classList.remove('bg-3');
-    offcanvasBody.classList.remove('bg');
-    offcanvasBody.classList.add('trans');
-    offcanvasText.classList.remove('text-white');
-    offcanvasText.classList.add('text-black');
-    label.setAttribute('class', 'label');
+    for (const text of nORp) {
+        text.classList.remove('text-2');
+    }
+    for (const nav of navs) {
+        nav.classList.remove('bg-3');
+    }
+    for (const body of bodys) {
+        body.classList.remove('bg');
+    }
+    for (const link of links) {
+        link.classList.remove('links2');
+    }
+    nORp[1].classList.remove('offcanvas-btn2');
+    label.classList.remove('label2');
     if (color.innerText !== '') {
         btn.setAttribute('class', 'picker');
     } else {
         btn.setAttribute('class', 'picker d-none');
     }
-    pcText.classList.remove('text-white');
 });
 input.addEventListener('change', () => {
+    const img = document.getElementById('img');
     let reader = new FileReader();
     reader.onload = (e) => {
         img.setAttribute('src', e.target.result);
@@ -77,6 +70,8 @@ input.addEventListener('change', () => {
     label.innerText = 'Choose Another?';
 });
 btn.addEventListener('click', async () => {
+    const color = document.getElementById('color');
+    const body = document.body;
     const eyeDropper = new EyeDropper();
     let { sRGBHex } = await eyeDropper.open();
     color.classList.remove('d-none');

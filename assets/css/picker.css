@@ -9,6 +9,10 @@
   font-family: adobemingstd;
 }
 
+.body {
+  transition: 0.4s;
+}
+
 .bi-sun {
   color: rgb(250, 225, 0);
   text-shadow: 0 0 14px rgb(0, 217, 255);
@@ -48,10 +52,6 @@
   background-color: rgba(15, 15, 15, 0.9254901961);
 }
 
-.trans {
-  transition: 0.4s;
-}
-
 .vh {
   height: 90vh;
 }
@@ -61,7 +61,6 @@
   transition: 0.3s;
 }
 .text:hover {
-  transition: 0.3s;
   color: #7e7e7e;
 }
 
@@ -70,7 +69,6 @@
   transition: 0.3s;
 }
 .text-2:hover {
-  transition: 0.3s;
   color: #adadad;
 }
 
@@ -81,18 +79,13 @@
   transition: 0.3s;
 }
 .offcanvas-btn:hover {
-  transition: 0.3s;
   color: #7e7e7e;
 }
 
 .offcanvas-btn2 {
-  border: none;
-  background-color: transparent;
   color: #ffffff;
-  transition: 0.3s;
 }
 .offcanvas-btn2:hover {
-  transition: 0.3s;
   color: #adadad;
 }
 
@@ -109,14 +102,18 @@
 
 .links {
   color: rgb(17, 0, 255);
-  background-color: rgba(255, 255, 255, 0.3764705882);
   transition: 0.4s;
   text-shadow: 0 0 2px black;
 }
 .links:hover {
-  transition: 0.4s;
   color: rgb(0, 153, 255);
-  background-color: rgba(202, 202, 202, 0.768627451);
+}
+
+.links2 {
+  color: rgb(255, 255, 255);
+}
+.links2:hover {
+  color: rgb(112, 112, 112);
 }
 
 .label {
@@ -136,19 +133,13 @@
 }
 
 .label2 {
-  cursor: pointer;
   border: 2px solid #ffffff;
-  padding: 12px;
-  font-size: 22px;
-  border-radius: 35px;
   color: #ffffff;
-  transition: 0.5s;
 }
 .label2:hover, .label2:focus {
   background-color: #ffffff;
   color: #000000;
   animation: label2 0.8s ease-out;
-  box-shadow: 0 0 0 2em transparent;
 }
 
 .img {
