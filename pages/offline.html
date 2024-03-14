@@ -12,21 +12,21 @@
     <title id="title">Offline</title>
 </head>
 
-<body id="body">
-    <nav id="navbar" class="bg-2">
+<body class="body">
+    <nav id="navbar" class="bg-2 navs">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="./clock.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
+            <a href="./clock.html" class="fs-4 text-decoration-none text">Perv</a>
             <i id="sun" class="bi bi-sun fs-2"></i>
             <i id="moon" class="bi bi-moon d-none fs-2"></i>
-            <button id="offcanvas-btn" class="offcanvas-btn fs-4" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Pages</button>
+            <button class="offcanvas-btn text fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">Pages</button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
-                <div id="offcanvas-header" class="offcanvas-header bg-2">
-                    <h5 id="offcanvas-text" class="offcanvas-title fs-4 text-black">Pages Menu</h5>
+                <div class="offcanvas-header navs bg-2">
+                    <h5 class="offcanvas-title fs-4 text">Pages Menu</h5>
                     <button class="bi fs-2 bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div id="offcanvas-body" class="offcanvas-body d-flex flex-column text-center">
+                <div class="offcanvas-body d-flex body flex-column text-center">
                     <a class="text-decoration-none links fs-4" href="../index.html">Nike (1)</a>
                     <a class="text-decoration-none links fs-4" href="./card.html">Card (2)</a>
                     <a class="text-decoration-none links fs-4" href="./speaker.html">Speaker (3)</a>
@@ -44,12 +44,12 @@
     </nav>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh">
         <div class="d-flex flex-column align-items-center" id="online">
-            <i id="icon" class="bi bi-wifi-1 display-1"></i>
-            <p id="text" class="fs-4 text-center">You Are Online, Turn Of Your Wifi To See Result!</p>
+            <i id="icon" class="bi offs trans bi-wifi-1 display-1"></i>
+            <p class="fs-4 offs trans text-center">You Are Online, Turn Of Your Wifi To See Result!</p>
         </div>
         <div id="offline" class="d-none d-flex flex-column align-items-center">
-            <i id="icon2" class="bi bi-wifi-off display-1"></i>
-            <p id="text2" class="fs-4 text-center">You Are Offline!</p>
+            <i class="bi offs trans bi-wifi-off display-1"></i>
+            <p class="fs-4 offs trans text-center">You Are Offline!</p>
             <div class="loader d-inline-flex"></div>
         </div>
     </div>

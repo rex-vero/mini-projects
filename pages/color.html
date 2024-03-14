@@ -12,21 +12,21 @@
     <title>Color</title>
 </head>
 
-<body id="body">
-    <nav id="navbar" class="bg-2">
+<body class="body">
+    <nav class="bg-2 navs">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="./offline.html" id="prev" class="fs-4 text-decoration-none text">Perv</a>
+            <a href="./offline.html" class="fs-4 text-decoration-none text">Perv</a>
             <i id="sun" class="bi bi-sun fs-2"></i>
             <i id="moon" class="bi bi-moon d-none fs-2"></i>
-            <button id="offcanvas-btn" class="offcanvas-btn fs-4" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Pages</button>
+            <button class="offcanvas-btn text fs-4" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">Pages</button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
-                <div id="offcanvas-header" class="offcanvas-header bg-2">
-                    <h5 id="offcanvas-text" class="offcanvas-title fs-4 text-black">Pages Menu</h5>
+                <div class="offcanvas-header navs bg-2">
+                    <h5 class="offcanvas-title fs-4 text">Pages Menu</h5>
                     <button class="bi fs-2 bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div id="offcanvas-body" class="offcanvas-body d-flex flex-column text-center">
+                <div class="offcanvas-body body d-flex flex-column text-center">
                     <a class="text-decoration-none links fs-4" href="../index.html">Nike (1)</a>
                     <a class="text-decoration-none links fs-4" href="./card.html">Card (2)</a>
                     <a class="text-decoration-none links fs-4" href="./speaker.html">Speaker (3)</a>
@@ -39,11 +39,11 @@
                     <a class="text-decoration-none links fs-4" href="./todo.html">ToDo (10)</a>
                 </div>
             </div>
-            <a href="./bmi.html" id="next" class="fs-4 text-decoration-none text">Next</a>
+            <a href="./bmi.html" class="fs-4 text-decoration-none text">Next</a>
         </div>
     </nav>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh">
-        <p class="fs-2 text-center">Changes Backgroung Color Randomly</p>
+        <p class="fs-2 text text-center">Changes Backgroung Color Randomly</p>
         <button id="btn" class="button p-2 fs-5">Altering Color</button>
     </div>
 </body>
