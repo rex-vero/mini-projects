@@ -4,7 +4,6 @@ const input = document.getElementById('input');
 const btn = document.getElementById('btn');
 const number = Math.floor(Math.random() * 10);
 let counter = 1;
-console.log(number);
 sun.addEventListener('click', () => {
     const bodys = document.querySelectorAll('.body');
     const navs = document.querySelectorAll('.navs');
