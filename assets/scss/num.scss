@@ -1,0 +1,70 @@
+@import '_nav';
+
+.green {
+    background: rgba(0, 194, 0, 0.315);
+
+}
+
+.bg-list {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(228, 228, 228) 20%, rgb(60, 60, 60) 100%);
+    border-radius: 30px;
+    box-shadow: 0 0 20px black;
+    transition: .5s;
+}
+
+.bg-list2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: 0 0 20px white;
+}
+
+.input {
+    outline: none;
+    caret-color: black;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    color: black;
+    padding: 5px;
+    transition: .5s;
+
+    &:focus,
+    &:focus-visible {
+        caret-color: rgb(89, 89, 89);
+        border: 2px solid rgb(89, 89, 89);
+    }
+}
+
+.input2 {
+    color: white;
+    caret-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.guess {
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .5s;
+
+    &:hover {
+        scale: 1.01;
+        background: #000;
+        color: white;
+    }
+}
+
+.guess2 {
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+
+    &:hover {
+        scale: 1.01;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+}

@@ -95,7 +95,7 @@ list.addEventListener('click', (e) => {
             list.classList.remove('limit');
         }
     }
-    if (e.target.nodeName === 'DIV') {
+    if (e.target.nodeName === 'SPAN') {
         e.target.classList.toggle('checked');
     }
 });

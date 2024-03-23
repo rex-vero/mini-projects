@@ -19,6 +19,7 @@
     text-shadow: 0 0 14px rgb(0, 217, 255);
     cursor: pointer;
     transition: .3s;
+    animation: rotate 20s linear infinite alternate forwards;
 
     &:hover {
         color: rgb(216, 195, 5);
@@ -32,6 +33,7 @@
     text-shadow: 0 0 14px rgb(0, 38, 255);
     cursor: pointer;
     transition: .3s;
+    animation: rotate 20s linear infinite alternate forwards;
 
     &:hover {
         transition: .3s;
@@ -123,5 +125,15 @@
 
     &:hover {
         color: rgb(112, 112, 112);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

@@ -126,92 +126,68 @@
     transform: rotate(360deg);
   }
 }
-#list {
-  overflow-y: auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.green {
+  background: rgba(0, 194, 0, 0.315);
 }
 
-.limit {
-  height: 239px;
+.bg-list {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(228, 228, 228) 20%, rgb(60, 60, 60) 100%);
+  border-radius: 30px;
+  box-shadow: 0 0 20px black;
+  transition: 0.5s;
 }
 
-.todo {
-  background-color: rgb(116, 196, 152);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.bg-list2 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 100%);
+  box-shadow: 0 0 20px white;
 }
 
 .input {
   outline: none;
-  border-radius: 10px;
-  border: 1px solid black;
-}
-
-.btn-add {
-  border: 1px solid rgb(0, 160, 0);
-  background-color: transparent;
-  color: rgb(0, 160, 0);
-  border-radius: 10px;
-  transition: 0.2s;
-}
-.btn-add:hover {
-  transform: scale(1.01);
-  background-color: rgb(0, 160, 0);
+  caret-color: black;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background: transparent;
   color: black;
+  padding: 5px;
+  transition: 0.5s;
+}
+.input:focus, .input:focus-visible {
+  caret-color: rgb(89, 89, 89);
+  border: 2px solid rgb(89, 89, 89);
 }
 
-.btn-del {
-  border: 1px solid rgb(160, 0, 0);
-  background-color: transparent;
-  color: rgb(160, 0, 0);
-  border-radius: 10px;
-  transition: 0.2s;
-}
-.btn-del:hover {
-  transform: scale(1.01);
-  background-color: rgb(160, 0, 0);
-  color: black;
-}
-
-.text-todo {
-  text-shadow: 0 0 10px black;
-  user-select: none;
-}
-
-.bi-trash {
-  display: none;
+.input2 {
   color: white;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.bi-trash:hover {
-  color: #ec0000;
+  caret-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
-.checked {
-  text-decoration: line-through rgb(255, 255, 255);
+.guess {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.5s;
+}
+.guess:hover {
+  scale: 1.01;
+  background: #000;
+  color: white;
 }
 
-.bg-todo {
-  display: flex;
-  background-color: rgb(44, 104, 52);
-  border: 1px solid black;
-  margin: 1px 0;
-  user-select: none;
-  transition: 0.4s;
+.guess2 {
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-.bg-todo:hover {
-  background-color: rgb(22, 53, 26);
-}
-.bg-todo:hover .bi-trash {
-  display: block;
+.guess2:hover {
+  scale: 1.01;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 990px) {
-  .bi-trash {
-    display: block;
-  }
-}
-
-/*# sourceMappingURL=todo.css.map */
+/*# sourceMappingURL=num.css.map */
