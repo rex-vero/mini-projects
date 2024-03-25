@@ -18,7 +18,7 @@
   text-shadow: 0 0 14px rgb(0, 217, 255);
   cursor: pointer;
   transition: 0.3s;
-  animation: rotate 20s linear infinite alternate forwards;
+  animation: rotate 10s linear infinite forwards;
 }
 .bi-sun:hover {
   color: rgb(216, 195, 5);
@@ -31,7 +31,7 @@
   text-shadow: 0 0 14px rgb(0, 38, 255);
   cursor: pointer;
   transition: 0.3s;
-  animation: rotate 20s linear infinite alternate forwards;
+  animation: rotate 10s linear infinite forwards;
 }
 .bi-moon:hover {
   transition: 0.3s;
@@ -142,6 +142,48 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 100%);
   box-shadow: 0 0 20px white;
+}
+
+.easy {
+  background: transparent;
+  border: 1px solid rgb(14, 107, 0);
+  color: rgb(14, 107, 0);
+  box-shadow: 0 0 10px rgb(14, 107, 0);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.easy:hover {
+  scale: 1.01;
+  background: rgb(14, 107, 0);
+  color: white;
+}
+
+.normal {
+  background: transparent;
+  border: 1px solid rgb(216, 216, 0);
+  color: rgb(216, 216, 0);
+  box-shadow: 0 0 10px rgb(216, 216, 0);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.normal:hover {
+  scale: 1.01;
+  background: rgb(216, 216, 0);
+  color: white;
+}
+
+.hard {
+  background: transparent;
+  border: 1px solid rgb(163, 0, 0);
+  color: rgb(163, 0, 0);
+  box-shadow: 0 0 10px rgb(163, 0, 0);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.hard:hover {
+  scale: 1.01;
+  background: rgb(163, 0, 0);
+  color: white;
 }
 
 .input {
