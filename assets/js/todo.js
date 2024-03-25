@@ -6,12 +6,15 @@ const list = document.getElementById('list');
 const del = document.getElementById('del');
 const data = JSON.parse(localStorage.getItem('todo'));
 let todoList = data || [];
-todoList.forEach(todo => {
+const liMaker = (value) => {
     const div = document.createElement('div');
     div.setAttribute('class', 'bg-todo align-items-center justify-content-between');
-    div.innerHTML += `<span class="text-white fs-5 px-3">${todo}</span>
+    div.innerHTML += `<span class="text-white fs-5 px-3">${value}</span>
     <i class="bi bi-trash px-2 fs-5"></i>`;
     list.appendChild(div);
+}
+todoList.forEach(todo => {
+    liMaker(todo);
 });
 sun.addEventListener('click', () => {
     const bodys = document.querySelectorAll('.body');
@@ -60,12 +63,7 @@ add.addEventListener('click', () => {
     if (input.value === '') {
         warn.innerText = 'Input Is Empty!';
     } else {
-        const div = document.createElement('div');
-        div.setAttribute('class', 'bg-todo align-items-center justify-content-between');
-        warn.innerText = '';
-        div.innerHTML += `<span class="text-white fs-5 px-3">${input.value}</span>
-        <i class="bi bi-trash px-2 fs-5"></i>`;
-        list.appendChild(div);
+        liMaker(input.value);
         todoList.push(input.value)
         localStorage.setItem('todo', JSON.stringify(todoList));
     }
