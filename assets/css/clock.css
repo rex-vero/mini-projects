@@ -18,7 +18,7 @@
   text-shadow: 0 0 14px rgb(0, 217, 255);
   cursor: pointer;
   transition: 0.3s;
-  animation: rotate 10s linear infinite forwards;
+  animation: rotate 5s linear infinite forwards;
 }
 .bi-sun:hover {
   color: rgb(216, 195, 5);
@@ -31,7 +31,7 @@
   text-shadow: 0 0 14px rgb(0, 38, 255);
   cursor: pointer;
   transition: 0.3s;
-  animation: rotate 10s linear infinite forwards;
+  animation: rotate 5s linear infinite forwards;
 }
 .bi-moon:hover {
   transition: 0.3s;

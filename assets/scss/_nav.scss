@@ -19,7 +19,7 @@
     text-shadow: 0 0 14px rgb(0, 217, 255);
     cursor: pointer;
     transition: .3s;
-    animation: rotate 10s linear infinite forwards;
+    animation: rotate 5s linear infinite forwards;
 
     &:hover {
         color: rgb(216, 195, 5);
@@ -33,7 +33,7 @@
     text-shadow: 0 0 14px rgb(0, 38, 255);
     cursor: pointer;
     transition: .3s;
-    animation: rotate 10s linear infinite forwards;
+    animation: rotate 5s linear infinite forwards;
 
     &:hover {
         transition: .3s;

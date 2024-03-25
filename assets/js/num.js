@@ -39,8 +39,10 @@ const calc = (number, q) => {
     }
 }
 const setMode = (limit, question) => {
+    const body = document.body;
     const limitNum = document.getElementById('limit');
     const reveal = document.getElementById('reveal');
+    body.classList.remove('green');
     limitNum.textContent = `Guess The Number ( Between 0 To ${limit} )`;
     reveal.textContent = question;
 }
