@@ -4,6 +4,13 @@ const nowDate = document.getElementById('date');
 const sec = document.querySelector('.sec');
 const min = document.querySelector('.min');
 const hour = document.querySelector('.hour');
+let title = document.title;
+window.addEventListener('focus', () => {
+    document.title = title;
+});
+window.addEventListener('blur', () => {
+    document.title = 'Oh Come On Come Back :(';
+});
 sun.addEventListener('click', () => {
     const clockAnalog = document.querySelector('.clock');
     const bodys = document.querySelectorAll('.body');

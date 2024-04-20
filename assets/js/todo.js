@@ -5,6 +5,13 @@ const input = document.getElementById('input');
 const list = document.getElementById('list');
 const del = document.getElementById('del');
 const data = JSON.parse(localStorage.getItem('todo'));
+let title = document.title;
+window.addEventListener('focus', () => {
+    document.title = title;
+});
+window.addEventListener('blur', () => {
+    document.title = 'Oh Come On Come Back :(';
+});
 let todoList = data || [];
 const liMaker = (value) => {
     const div = document.createElement('div');

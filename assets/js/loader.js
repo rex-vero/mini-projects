@@ -1,7 +1,6 @@
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const white = document.getElementById('white');
-const black = document.getElementById('black');
+const text = document.getElementById('text-loader');
 let title = document.title;
 window.addEventListener('focus', () => {
     document.title = title;
@@ -51,11 +50,12 @@ moon.addEventListener('click', () => {
     }
     nORp[1].classList.remove('offcanvas-btn2');
 });
-black.addEventListener('click', () => {
-    const img = document.getElementById('img');
-    img.setAttribute('src', './assets/images/nike/black.webp');
-});
-white.addEventListener('click', () => {
-    const img = document.getElementById('img');
-    img.setAttribute('src', './assets/images/nike/white.webp');
-});
+setInterval(() => {
+    text.textContent = 'Loading.';
+}, 500);
+setInterval(() => {
+    text.textContent = 'Loading..';
+}, 550);
+setInterval(() => {
+    text.textContent = 'Loading...';
+}, 600);

@@ -1,6 +1,13 @@
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
 const btn = document.getElementById('btn');
+let title = document.title;
+window.addEventListener('focus', () => {
+    document.title = title;
+});
+window.addEventListener('blur', () => {
+    document.title = 'Oh Come On Come Back :(';
+});
 sun.addEventListener('click', () => {
     const bodys = document.querySelectorAll('.body');
     const navs = document.querySelectorAll('.navs');

@@ -9,6 +9,13 @@ let number = Math.floor(Math.random() * 10);
 let limit = 10;
 let counter = 1;
 let question = '?';
+let title = document.title;
+window.addEventListener('focus', () => {
+    document.title = title;
+});
+window.addEventListener('blur', () => {
+    document.title = 'Oh Come On Come Back :(';
+});
 const calc = (number, q) => {
     const body = document.body;
     const score = document.getElementById('score');
