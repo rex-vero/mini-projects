@@ -149,53 +149,10 @@
   background-color: rgb(255, 255, 255);
 }
 
-.red {
-  background-color: red;
-  color: rgb(12, 0, 187);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.blue {
-  background-color: blue;
-  color: black;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.aqua {
-  background-color: aqua;
-  color: #000;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.blueviolet {
-  background-color: blueviolet;
-  color: gold;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.green {
-  background-color: green;
-  color: brown;
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.yellowgreen {
-  background-color: yellowgreen;
-  color: rgb(140, 0, 255);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
-}
-
-.pink {
-  background-color: pink;
-  color: rgb(255, 94, 0);
-  text-shadow: 0 0 10px black;
-  transition: all 0.4s;
+.text-diff {
+  background-color: #000;
+  color: white;
+  mix-blend-mode: difference;
 }
 
 /*# sourceMappingURL=color.css.map */

@@ -13,6 +13,7 @@ sun.addEventListener('click', () => {
     const navs = document.querySelectorAll('.navs');
     const nORp = document.querySelectorAll('.text');
     const links = document.querySelectorAll('.links');
+    const load = document.getElementById('load');
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
     for (const text of nORp) {
@@ -28,12 +29,14 @@ sun.addEventListener('click', () => {
         link.classList.add('links2');
     }
     nORp[1].classList.add('offcanvas-btn2');
+    load.classList.add('bg-dark');
 });
 moon.addEventListener('click', () => {
     const bodys = document.querySelectorAll('.body');
     const navs = document.querySelectorAll('.navs');
     const nORp = document.querySelectorAll('.text');
     const links = document.querySelectorAll('.links');
+    const load = document.getElementById('load');
     sun.classList.remove('d-none');
     moon.classList.add('d-none');
     for (const text of nORp) {
@@ -49,6 +52,7 @@ moon.addEventListener('click', () => {
         link.classList.remove('links2');
     }
     nORp[1].classList.remove('offcanvas-btn2');
+    load.classList.remove('bg-dark');
 });
 setInterval(() => {
     text.textContent.length > 2 ? text.textContent = '' : text.textContent += '.';
