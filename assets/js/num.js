@@ -49,9 +49,11 @@ const setMode = (limit, question) => {
     const body = document.body;
     const limitNum = document.getElementById('limit');
     const reveal = document.getElementById('reveal');
+    const score = document.getElementById('score');
     body.classList.remove('green');
     limitNum.textContent = `Guess The Number ( Between 0 To ${limit} )`;
     reveal.textContent = question;
+    score.textContent = '';
 }
 sun.addEventListener('click', () => {
     const bodys = document.querySelectorAll('.body');

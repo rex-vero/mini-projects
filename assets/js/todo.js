@@ -70,6 +70,7 @@ add.addEventListener('click', () => {
     if (input.value === '') {
         warn.innerText = 'Input Is Empty!';
     } else {
+        warn.innerText = '';
         liMaker(input.value);
         todoList.push(input.value)
         localStorage.setItem('todo', JSON.stringify(todoList));
