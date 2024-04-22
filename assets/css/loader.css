@@ -132,8 +132,8 @@
   width: 300px;
   transform: rotate(0deg);
   background-color: red;
-  border-radius: 80px;
-  animation: spin 0.8s linear infinite forwards;
+  border-radius: 30px;
+  animation: spin 1s linear infinite forwards;
 }
 
 .load {
@@ -142,7 +142,7 @@
   height: 250px;
   width: 250px;
   background-color: rgb(255, 255, 255);
-  animation: shadow 0.8s linear infinite forwards;
+  animation: shadow 1s linear infinite forwards;
   box-shadow: 0 0 25px rgb(0, 0, 0);
 }
 
@@ -151,26 +151,26 @@
 }
 
 .text-loader {
-  animation: stop 0.8s linear infinite forwards;
+  animation: stop 1s linear infinite forwards;
 }
 
 @keyframes spin {
   0% {
     background-color: red;
     transform: rotate(0deg);
-    border-radius: 80px;
+    border-radius: 30px;
     box-shadow: 0 0 25px red;
   }
   50% {
     background-color: green;
     transform: rotate(180deg);
-    border-radius: 0px;
+    border-radius: 50%;
     box-shadow: 0 0 25px green;
   }
   100% {
     background-color: blue;
     transform: rotate(360deg);
-    border-radius: 80px;
+    border-radius: 30px;
     box-shadow: 0 0 25px blue;
   }
 }
@@ -179,6 +179,7 @@
     box-shadow: 0 0 25px rgb(0, 0, 0);
   }
   50% {
+    border-radius: 50%;
     box-shadow: 0 0 50px rgb(0, 0, 0);
   }
   100% {
@@ -197,6 +198,16 @@
   100% {
     color: blue;
     transform: rotate(-360deg);
+  }
+}
+@media only screen and (max-width: 990px) {
+  .main {
+    height: 200px;
+    width: 200px;
+  }
+  .load {
+    height: 150px;
+    width: 150px;
   }
 }
 
