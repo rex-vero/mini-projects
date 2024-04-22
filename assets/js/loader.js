@@ -51,11 +51,9 @@ moon.addEventListener('click', () => {
     nORp[1].classList.remove('offcanvas-btn2');
 });
 setInterval(() => {
-    text.textContent = 'Loading.';
+    if (text.textContent.length > 2) {
+        text.textContent = '';
+    } else {
+        text.textContent += '.';
+    }
 }, 500);
-setInterval(() => {
-    text.textContent = 'Loading..';
-}, 550);
-setInterval(() => {
-    text.textContent = 'Loading...';
-}, 600);

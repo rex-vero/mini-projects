@@ -132,12 +132,12 @@
   width: 300px;
   transform: rotate(0deg);
   background-color: red;
-  border-radius: 30px;
+  border-radius: 10px;
   animation: spin 1s linear infinite forwards;
 }
 
 .load {
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
   height: 250px;
   width: 250px;
@@ -152,13 +152,14 @@
 
 .text-loader {
   animation: stop 1s linear infinite forwards;
+  font-size: 30px;
 }
 
 @keyframes spin {
   0% {
     background-color: red;
     transform: rotate(0deg);
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 0 25px red;
   }
   50% {
@@ -170,7 +171,7 @@
   100% {
     background-color: blue;
     transform: rotate(360deg);
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 0 25px blue;
   }
 }
@@ -208,6 +209,9 @@
   .load {
     height: 150px;
     width: 150px;
+  }
+  .text-loader {
+    font-size: 20px;
   }
 }
 
