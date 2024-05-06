@@ -121,7 +121,7 @@ normalBtn.addEventListener('click', () => {
 hardBtn.addEventListener('click', () => {
     limit = 30;
     number = Math.floor(Math.random() * 30);
-    question = '??';
+    question = '???';
     setMode(limit, question);
 });
 input.addEventListener('input', () => {
