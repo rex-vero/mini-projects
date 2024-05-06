@@ -50,6 +50,7 @@ const setMode = (limit, question) => {
     const limitNum = document.getElementById('limit');
     const reveal = document.getElementById('reveal');
     const score = document.getElementById('score');
+    counter = 0;
     body.classList.remove('green');
     limitNum.textContent = `Guess The Number ( Between 0 To ${limit} )`;
     reveal.textContent = question;
